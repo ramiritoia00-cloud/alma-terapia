@@ -735,11 +735,11 @@ overlay.onclick = () => { closeDrawer(); togglePanel(false); };
 
 /* ----- whatsapp ----- */
 document.getElementById("waDirect").href =
-  "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("¡Hola Alma Terapia! 🌙 Quiero hacerles una consulta.");
+  "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("¡Hola! Quiero hacerles una consulta.");
 
 document.getElementById("waBtn").onclick = () => {
   if(cart.size === 0) return;
-  let lines = ["¡Hola Alma Terapia! 🌙 Quiero hacer este pedido:", ""];
+  let lines = ["¡Hola! Quiero hacer este pedido:", ""];
   let total = 0;
   cart.forEach(({p, qty}) => {
     const sub = p.pr * qty;
