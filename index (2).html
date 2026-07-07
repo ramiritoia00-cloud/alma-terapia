@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+
+<!-- SEO Meta Tags para Corrientes Capital -->
+<title>Alma Terapia — Aromas que transforman espacios | Corrientes Capital</title>
+<meta name="description" content="Alma Terapia en Corrientes Capital. Catálogo de productos para el bienestar y la armonía de tu hogar: sahumerios (Sagrada Madre, Aromanza), difusores, lámparas de sal, humidificadores y deco.">
+<meta name="keywords" content="Alma Terapia, aromaterapia, Corrientes Capital, sahumerios, Sagrada Madre, Aromanza, difusores, lámparas de sal, velas, decoración, bienestar, esencias">
+<meta property="og:title" content="Alma Terapia — Aromas que transforman espacios | Corrientes Capital">
+<meta property="og:description" content="Catálogo online de Alma Terapia. Aromas, sahumerios, difusores y elementos de decoración en Corrientes Capital.">
+<meta property="og:type" content="website">
+
+<!-- Favicon SVG: Luna dorada en fondo azul -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23131f38'/><path d='M65 75A35 35 0 1 1 50 15a35 35 0 0 0 15 60z' fill='%23d3ad6d'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#131f38;
+  --navy-2:#1a2a4c;
+  --navy-3:#22345c;
+  --gold:#d3ad6d;
+  --gold-light:#ecd9ae;
+  --cream:#f1e9db;
+  --ink:#28283a;
+  --line:rgba(211,173,109,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Jost',sans-serif;
+  background:var(--navy);
+  background-image:radial-gradient(ellipse 120% 60% at 50% -10%, #223662 0%, var(--navy) 60%);
+  color:var(--cream);
+  min-height:100vh;
+}
+/* ---------- header ---------- */
+header{
+  text-align:center;
+  padding:34px 16px 18px;
+  position:relative;
+  overflow:hidden;
+}
+.stars{position:absolute;inset:0;pointer-events:none}
+.stars span{position:absolute;color:var(--gold);opacity:.55;font-size:9px}
+.moon{display:block;margin:0 auto 10px;width:30px;height:30px}
+h1{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;
+  font-size:clamp(30px,8vw,44px);
+  letter-spacing:.34em;
+  text-indent:.34em;
+  color:var(--gold-light);
+  line-height:1.05;
+}
+h1 small{
+  display:block;
+  font-size:.44em;
+  letter-spacing:.52em;
+  text-indent:.52em;
+  font-weight:400;
+  color:var(--gold);
+  margin-top:6px;
+}
+.tagline{
+  font-family:'Great Vibes',cursive;
+  font-size:clamp(19px,5vw,24px);
+  color:var(--gold);
+  margin-top:12px;
+  opacity:.92;
+}
+.hair{
+  width:54px;height:1px;background:var(--line);
+  margin:16px auto 0;position:relative;
+}
+.hair::after{
+  content:'✦';position:absolute;left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  color:var(--gold);font-size:9px;
+}
+/* ---------- sticky controls (dos filas) ---------- */
+.controls{
+  position:sticky;top:0;z-index:40;
+  background:rgba(19,31,56,.94);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(211,173,109,.18);
+}
+.controls-inner{
+  padding:10px 14px 12px;
+  width:100%;
+  max-width:742px;
+  margin:0 auto;
+}
+/* Fila superior: búsqueda + carrito */
+.controls-row{
+  display:flex;gap:8px;align-items:center;
+}
+/* Fila inferior: categorías + orden, centradas y simétricas */
+.controls-row2{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:26px;
+  margin-top:10px;
+}
+.search{
+  flex:1;min-width:0;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:10px 16px;
+  color:var(--cream);
+  font-family:'Jost',sans-serif;
+  font-size:15px;
+  font-weight:300;
+  outline:none;
+  transition:border-color .2s;
+}
+.search::placeholder{color:rgba(241,233,219,.45);letter-spacing:.04em}
+.search:focus{border-color:var(--gold)}
+/* Botón carrito en el menú superior */
+.cart-top{
+  flex:0 0 auto;
+  position:relative;
+  width:46px;height:46px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--gold);
+  border:1px solid var(--gold);
+  border-radius:999px;
+  color:var(--navy);
+  cursor:pointer;
+  transition:transform .15s;
+}
+.cart-top:active{transform:scale(.94)}
+.cart-top .badge{
+  position:absolute;top:-5px;right:-5px;
+  background:var(--navy);color:var(--gold-light);
+  border:1px solid var(--gold);
+  border-radius:999px;min-width:20px;height:20px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:500;padding:0 5px;
+  line-height:1;
+}
+/* Animación pulse/glow para reencontrar el carrito */
+@keyframes cartPulse{
+  0%{box-shadow:0 0 0 0 rgba(211,173,109,.65);transform:scale(1)}
+  45%{box-shadow:0 0 0 12px rgba(211,173,109,0);transform:scale(1.14)}
+  100%{box-shadow:0 0 0 0 rgba(211,173,109,0);transform:scale(1)}
+}
+.cart-top.pulse{
+  animation:cartPulse .62s ease-in-out 2;
+}
+.cat-btn{
+  flex:0 0 auto;
+  display:flex;align-items:center;gap:7px;
+  font-family:'Jost',sans-serif;
+  font-size:12.5px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  font-weight:400;
+  color:var(--navy);
+  background:var(--gold);
+  border:1px solid var(--gold);
+  border-radius:999px;
+  padding:9px 18px;
+  cursor:pointer;
+  max-width:52vw;
+}
+.cat-btn .cur{
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+  font-weight:500;
+}
+.cat-btn svg{flex:0 0 auto}
+/* Selector de orden */
+.sort{
+  flex:0 0 auto;
+  appearance:none;-webkit-appearance:none;
+  background:transparent;
+  border:none;
+  color:var(--gold-light);
+  font-family:'Jost',sans-serif;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:300;
+  padding:6px 20px 6px 6px;
+  outline:none;cursor:pointer;
+  max-width:52vw;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 24 24' fill='none'><path d='M6 9l6 6 6-6' stroke='%23d3ad6d' stroke-width='2.6' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 2px center;
+}
+.sort option{background:var(--navy-2);color:var(--cream)}
+/* ---------- category panel ---------- */
+.cat-panel{
+  position:fixed;left:0;right:0;top:0;z-index:80;
+  background:var(--navy-2);
+  border-bottom:1px solid var(--line);
+  max-height:80vh;overflow-y:auto;
+  padding:18px 16px 22px;
+  transform:translateY(-105%);
+  transition:transform .28s cubic-bezier(.3,.8,.3,1);
+  box-shadow:0 18px 44px rgba(0,0,0,.5);
+}
+.cat-panel.open{transform:translateY(0)}
+.cat-panel .panel-title{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;font-size:18px;
+  letter-spacing:.26em;text-indent:.26em;text-transform:uppercase;
+  color:var(--gold-light);
+  text-align:center;margin-bottom:16px;
+}
+.pills{
+  display:flex;flex-wrap:wrap;gap:9px;justify-content:center;
+  max-width:720px;margin:0 auto;
+}
+.pill{
+  font-family:'Jost',sans-serif;
+  font-size:12.5px;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  font-weight:400;
+  color:var(--gold-light);
+  background:transparent;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:8px 15px;
+  cursor:pointer;
+  transition:all .2s;
+}
+.pill.active{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:var(--navy);
+  font-weight:500;
+}
+/* ---------- catalog ---------- */
+main{padding:20px 14px 130px;max-width:1060px;margin:0 auto}
+.cat-title{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:500;
+  font-size:22px;
+  letter-spacing:.22em;
+  text-indent:.22em;
+  text-transform:uppercase;
+  color:var(--gold-light);
+  text-align:center;
+  margin:26px 0 4px;
+}
+.cat-count{
+  text-align:center;
+  font-size:12px;
+  letter-spacing:.14em;
+  color:rgba(241,233,219,.5);
+  margin-bottom:18px;
+  font-weight:300;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+}
+.card{
+  background:rgba(255,255,255,.035);
+  border:1px solid rgba(211,173,109,.22);
+  border-radius:14px;
+  padding:12px 10px 12px;
+  display:flex;flex-direction:column;
+  text-align:center;
+}
+.arch{
+  width:100%;
+  aspect-ratio:4/5;
+  border-radius:999px 999px 12px 12px;
+  overflow:hidden;
+  background:#fdfbf7;
+  border:1px solid var(--line);
+  margin-bottom:10px;
+  position:relative;
+}
+.arch img{width:100%;height:100%;object-fit:cover;display:block}
+.arch .noimg{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:var(--navy-2);color:var(--gold);font-family:'Cormorant Garamond',serif;
+  font-size:26px;letter-spacing:.1em;
+}
+/* Etiqueta de aromas sobre la imagen (refinada) */
+.vtag{
+  position:absolute;left:50%;bottom:8px;transform:translateX(-50%);
+  background:rgba(19,31,56,.82);
+  -webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
+  color:var(--gold-light);
+  font-family:'Jost',sans-serif;
+  font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:400;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:3px 11px;white-space:nowrap;
+  box-shadow:0 3px 10px rgba(0,0,0,.35);
+}
+.pname{
+  font-size:13px;
+  font-weight:400;
+  line-height:1.35;
+  color:var(--cream);
+  letter-spacing:.02em;
+  margin-bottom:6px;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  min-height:2.7em;
+}
+.pprice{
+  font-family:'Cormorant Garamond',serif;
+  font-size:19px;
+  font-weight:600;
+  color:var(--gold);
+  letter-spacing:.03em;
+  margin-bottom:10px;
+}
+.actions{margin-top:auto;min-height:36px}
+.add{
+  width:100%;
+  font-family:'Jost',sans-serif;
+  font-size:12.5px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--gold-light);
+  background:transparent;
+  border:1px solid var(--gold);
+  border-radius:999px;
+  padding:8px 0;
+  cursor:pointer;
+  transition:all .2s;
+}
+.add:active{background:var(--gold);color:var(--navy)}
+.stepper{
+  display:flex;align-items:center;justify-content:space-between;
+  border:1px solid var(--gold);
+  border-radius:999px;
+  overflow:hidden;
+  background:rgba(211,173,109,.1);
+}
+.stepper button{
+  width:38px;height:34px;
+  background:transparent;border:none;
+  color:var(--gold-light);
+  font-size:19px;cursor:pointer;line-height:1;
+}
+.stepper button:active{background:var(--gold);color:var(--navy)}
+.stepper .q{
+  font-weight:500;font-size:14px;color:var(--gold-light);
+  letter-spacing:.05em;
+}
+.empty{
+  text-align:center;color:rgba(241,233,219,.55);
+  font-weight:300;padding:60px 20px;letter-spacing:.05em;
+}
+/* ---------- floating button: WhatsApp (abajo a la derecha) ---------- */
+.wa-fab{
+  position:fixed;right:16px;bottom:18px;z-index:60;
+  width:54px;height:54px;
+  border-radius:999px;
+  background:var(--navy-2);
+  border:1px solid var(--gold);
+  color:var(--gold);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 24px rgba(0,0,0,.45);
+  cursor:pointer;
+  text-decoration:none;
+}
+/* ---------- overlay / cart drawer ---------- */
+.overlay{
+  position:fixed;inset:0;background:rgba(8,13,26,.6);
+  z-index:70;opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.overlay.open{opacity:1;pointer-events:auto}
+.drawer{
+  position:fixed;left:0;right:0;bottom:0;z-index:80;
+  background:var(--cream);
+  color:var(--ink);
+  border-radius:22px 22px 0 0;
+  max-height:86vh;
+  display:flex;flex-direction:column;
+  transform:translateY(105%);
+  transition:transform .3s cubic-bezier(.3,.8,.3,1);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.drawer.open{transform:translateY(0)}
+.drawer-head{
+  text-align:center;padding:18px 20px 12px;
+  border-bottom:1px solid rgba(19,31,56,.12);
+  position:relative;
+}
+.drawer-head h2{
+  font-family:'Cormorant Garamond',serif;
+  font-weight:600;font-size:20px;
+  letter-spacing:.24em;text-indent:.24em;text-transform:uppercase;
+  color:var(--navy);
+}
+.drawer-head .script{
+  font-family:'Great Vibes',cursive;font-size:17px;color:#a07c3c;margin-top:2px;
+}
+.close-x{
+  position:absolute;right:14px;top:14px;
+  background:none;border:none;font-size:22px;color:var(--navy);
+  cursor:pointer;line-height:1;padding:6px;
+}
+.cart-items{overflow-y:auto;padding:8px 18px;flex:1}
+.citem{
+  display:flex;align-items:center;gap:12px;
+  padding:12px 0;border-bottom:1px solid rgba(19,31,56,.08);
+}
+.citem .thumb{
+  width:52px;height:62px;flex:0 0 52px;
+  border-radius:999px 999px 8px 8px;
+  overflow:hidden;background:#fff;border:1px solid rgba(19,31,56,.12);
+  display:flex;align-items:center;justify-content:center;
+  color:#a07c3c;font-family:'Cormorant Garamond',serif;
+}
+.citem .thumb img{width:100%;height:100%;object-fit:cover}
+.citem .info{flex:1;min-width:0}
+.citem .info .n{
+  font-size:13px;font-weight:400;line-height:1.3;color:var(--ink);
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.citem .info .n em{font-style:normal;color:#a07c3c}
+.citem .info .p{
+  font-family:'Cormorant Garamond',serif;font-weight:600;
+  font-size:16px;color:#a07c3c;margin-top:2px;
+}
+.qty{display:flex;align-items:center;gap:2px}
+.qty button{
+  width:30px;height:30px;border-radius:999px;
+  border:1px solid rgba(19,31,56,.3);background:transparent;
+  color:var(--navy);font-size:16px;cursor:pointer;line-height:1;
+}
+.qty span{min-width:26px;text-align:center;font-weight:500;font-size:14px}
+.cart-empty{
+  text-align:center;padding:44px 20px;color:rgba(19,31,56,.55);font-weight:300;
+}
+.clear-cart{
+  display:block;margin:10px auto 2px;
+  background:none;border:none;
+  font-family:'Jost',sans-serif;
+  font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  color:rgba(19,31,56,.55);
+  text-decoration:underline;text-underline-offset:3px;
+  cursor:pointer;
+}
+.drawer-foot{
+  padding:12px 18px 18px;
+  border-top:1px solid rgba(19,31,56,.12);
+  background:var(--cream);
+}
+.total-row{
+  display:flex;justify-content:space-between;align-items:baseline;
+  margin-bottom:8px;
+}
+.total-row .lbl{
+  font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);
+}
+.total-row .amt{
+  font-family:'Cormorant Garamond',serif;font-weight:600;
+  font-size:26px;color:var(--navy);
+}
+.avail-note{
+  text-align:center;font-size:12px;font-weight:300;line-height:1.45;
+  color:rgba(19,31,56,.65);margin-bottom:12px;
+}
+.wa-btn{
+  width:100%;
+  background:var(--navy);
+  color:var(--gold-light);
+  border:none;border-radius:999px;
+  padding:15px 0;
+  font-family:'Jost',sans-serif;
+  font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  cursor:pointer;
+}
+.wa-btn:disabled{opacity:.4}
+/* Botón "Seguir comprando" */
+.keep-shopping{
+  width:100%;
+  margin-top:10px;
+  background:transparent;
+  color:var(--navy);
+  border:1px solid var(--navy);
+  border-radius:999px;
+  padding:12px 0;
+  font-family:'Jost',sans-serif;
+  font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;gap:9px;
+  cursor:pointer;
+  transition:all .2s;
+}
+.keep-shopping:active{background:var(--navy);color:var(--gold-light)}
+.keep-shopping svg{flex:0 0 auto}
+/* ---------- variant modal ---------- */
+.vmodal{
+  position:fixed;left:0;right:0;bottom:0;z-index:90;
+  background:var(--cream);color:var(--ink);
+  border-radius:22px 22px 0 0;
+  max-height:80vh;display:flex;flex-direction:column;
+  transform:translateY(105%);
+  transition:transform .28s cubic-bezier(.3,.8,.3,1);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.vmodal.open{transform:translateY(0)}
+.vmodal-head{text-align:center;padding:18px 46px 10px;position:relative;border-bottom:1px solid rgba(19,31,56,.12)}
+.vmodal-head .vh-title{
+  font-family:'Cormorant Garamond',serif;font-weight:600;font-size:17px;
+  letter-spacing:.18em;text-indent:.18em;text-transform:uppercase;color:var(--navy);
+}
+.vmodal-head .vh-sub{font-family:'Great Vibes',cursive;font-size:16px;color:#a07c3c;margin-top:2px}
+.vmodal-head .vh-name{font-size:13px;font-weight:400;color:rgba(19,31,56,.7);margin-top:6px;line-height:1.3}
+.vlist{overflow-y:auto;padding:14px 18px;display:flex;flex-wrap:wrap;gap:9px;justify-content:center;align-content:flex-start}
+.vopt{
+  font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.04em;
+  color:var(--navy);background:#fff;
+  border:1px solid rgba(19,31,56,.25);
+  border-radius:999px;padding:9px 16px;cursor:pointer;transition:all .15s;
+}
+.vopt:active{background:rgba(211,173,109,.18)}
+.vopt.sel{background:var(--navy);color:var(--gold-light);border-color:var(--navy);font-weight:500}
+.vfoot{padding:12px 18px 18px;border-top:1px solid rgba(19,31,56,.12)}
+.vconfirm{
+  width:100%;background:var(--navy);color:var(--gold-light);
+  border:none;border-radius:999px;padding:14px 0;
+  font-family:'Jost',sans-serif;font-size:13.5px;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;cursor:pointer;
+}
+.vconfirm:disabled{opacity:.4}
+/* ---------- footer ---------- */
+footer{
+  text-align:center;
+  padding:34px 20px 120px;
+  font-size:12px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  color:var(--gold);
+  font-weight:300;
+}
+
+/* ---------- MEDIA QUERIES (Ajustes Escritorio) ---------- */
+@media(min-width:560px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(min-width:860px){
+  .grid{grid-template-columns:repeat(4,1fr);gap:18px}
+
+  /* Carrito lateral a la derecha con ancho del 50% */
+  .drawer{
+    left:auto;
+    right:0;
+    top:0;
+    bottom:0;
+    width:50%;
+    max-width:500px; /* Previene un tamaño desproporcionado en ultra-wide */
+    max-height:100vh;
+    border-radius:22px 0 0 22px;
+    transform:translateX(105%); /* Esconde hacia la derecha en lugar de hacia abajo */
+  }
+  .drawer.open{
+    transform:translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .drawer,.overlay,.cat-panel,.vmodal,.pill,.add{transition:none}
+  .cart-top.pulse{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="stars" aria-hidden="true">
+    <span style="top:22%;left:12%">✦</span>
+    <span style="top:48%;left:22%;font-size:6px">✦</span>
+    <span style="top:18%;right:14%">✦</span>
+    <span style="top:55%;right:24%;font-size:6px">✦</span>
+  </div>
+  <svg class="moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M19 14.5A8.5 8.5 0 0 1 9.5 5 8.5 8.5 0 1 0 19 14.5Z" stroke="#d3ad6d" stroke-width="1.2" fill="rgba(211,173,109,.15)"/>
+  </svg>
+  <h1>ALMA<small>TERAPIA</small></h1>
+  <div class="tagline">aromas que transforman espacios</div>
+  <div class="hair"></div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <!-- Fila superior: búsqueda + carrito -->
+    <div class="controls-row">
+      <input class="search" id="search" type="search" placeholder="Buscar..." autocomplete="off">
+      <button class="cart-top" id="cartBtnTop" aria-label="Ver carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 7h12l-1.2 11a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M9 9V6a3 3 0 0 1 6 0v3" stroke="currentColor" stroke-width="1.6"/>
+        </svg>
+        <span class="badge" id="badge">0</span>
+      </button>
+    </div>
+    <!-- Fila inferior: categorías + orden (centradas y simétricas) -->
+    <div class="controls-row2">
+      <button class="cat-btn" id="catBtn" aria-haspopup="true" aria-expanded="false">
+        <span class="cur" id="catCur">Categorías</span>
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <select class="sort" id="sort" aria-label="Ordenar productos">
+        <option value="rel">Ordenar</option>
+        <option value="pa">De Menor a Mayor Precio</option>
+        <option value="pd">De Mayor a Menor Precio</option>
+        <option value="az">De A a Z</option>
+        <option value="za">De Z a A</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="cat-panel" id="catPanel" role="menu" aria-label="Categorías">
+  <div class="panel-title">Categorías</div>
+  <div class="pills" id="pills"></div>
+</div>
+
+<main id="main"></main>
+
+<footer>Bienestar para tu hogar, todos los días ✦</footer>
+
+<!-- WhatsApp flotante (abajo a la derecha) -->
+<a class="wa-fab" id="waDirect" aria-label="Escribinos por WhatsApp" target="_blank" rel="noopener">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/>
+  </svg>
+</a>
+
+<div class="overlay" id="overlay"></div>
+
+<!-- Selector de variantes / aromas -->
+<div class="vmodal" id="vmodal" role="dialog" aria-label="Elegir variante">
+  <div class="vmodal-head">
+    <div class="vh-title">Elegí tu aroma</div>
+    <div class="vh-sub">para cada momento...</div>
+    <div class="vh-name" id="vName"></div>
+    <button class="close-x" id="closeVmodal" aria-label="Cerrar">×</button>
+  </div>
+  <div class="vlist" id="vList"></div>
+  <div class="vfoot">
+    <button class="vconfirm" id="vConfirm" disabled>Agregar al pedido</button>
+  </div>
+</div>
+
+<!-- Carrito -->
+<div class="drawer" id="drawer" role="dialog" aria-label="Carrito de compras">
+  <div class="drawer-head">
+    <h2>Tu pedido</h2>
+    <div class="script">para cada momento...</div>
+    <button class="close-x" id="closeDrawer" aria-label="Cerrar">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="drawer-foot">
+    <div class="total-row">
+      <span class="lbl">Total</span>
+      <span class="amt" id="total">$0</span>
+    </div>
+    <div class="avail-note">Al enviar tu pedido te confirmamos por WhatsApp la disponibilidad de cada producto. ✦</div>
+    <button class="wa-btn" id="waBtn" disabled>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5s-.6-1.4-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.4-.3Z"/>
+      </svg>
+      Pedir por WhatsApp
+    </button>
+    <button class="keep-shopping" id="keepShopping">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Seguir comprando
+    </button>
+    <button class="clear-cart" id="clearCart">Vaciar carrito</button>
+  </div>
+</div>
+
+<script>
+const WHATSAPP = "5493794273789";
+
+const DATA = {"totalProducts": 361, "uniqueWithVariants": 139, "variantErrors": 0, "categories": [{"cat": "Aromanza", "slug": "aromanza", "count": 40, "products": [{"id": 3745188, "n": "Spray Aromanza 60ml", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku25fyxmq6pgzw6.webp", "v": [{"t": "Berry Kiis", "av": true}, {"t": "Citronela", "av": true}, {"t": "Premium Lemon", "av": false}, {"t": "Wanami", "av": false}, {"t": "Naranja Pimienta", "av": false}, {"t": "Acqua Per Luomo", "av": false}, {"t": "Violeta Alpina", "av": false}, {"t": "Shanti Namaste", "av": false}, {"t": "Coco Beach", "av": false}]}, {"id": 3745071, "n": "Difusor Varilla Aromanza 200ml", "pr": 12500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku25fx2mq6of74z.webp", "v": [{"t": "Premium Lemon", "av": true}, {"t": "Candy Grape", "av": true}, {"t": "Ocean Blue", "av": true}, {"t": "Noche Luna", "av": true}, {"t": "Esencia de la India", "av": true}, {"t": "Mix Floral", "av": true}, {"t": "Lemon Pie", "av": true}, {"t": "Coco Beach", "av": true}, {"t": "Manzana Canela", "av": true}, {"t": "Miel y Almendras", "av": true}, {"t": "Vainilla Sugar", "av": false}]}, {"id": 3726771, "n": "SAHUMERIO AROMANZA MOMENTOS DE ALENTAR ARGENTINA", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku24ru5mq0vd2q0.png"}, {"id": 3532534, "n": "Sahumerio Ciudades Arom. x5", "pr": 3300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1ya70molni1pp.jpeg", "v": [{"t": "SYDNEY", "av": true}, {"t": "SAN FRANCISCO", "av": true}, {"t": "MILAN", "av": true}, {"t": "BUDAPEST", "av": true}, {"t": "JAIPUR", "av": true}, {"t": "PARIS", "av": true}, {"t": "BUENOS AIRES", "av": true}, {"t": "RIO DE JANEIRO", "av": true}, {"t": "CALIDORNIA", "av": true}, {"t": "TULUM", "av": true}, {"t": "GRANADA", "av": true}, {"t": "EL CAIRO", "av": true}]}, {"id": 3404456, "n": "Sahumerio Trio Series Arom. India", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1tzj8mnrkbso5.webp", "v": [{"t": "Palo Santo-Salvia Blanca-Sandalo", "av": true}, {"t": "Palo Santo-Salvia Blanca-Almizcle", "av": true}, {"t": "Palo Santo-Salvia Blanca-Jazmin", "av": true}, {"t": "Palo Santo-Salvia Blanca-Hierba Dulce", "av": false}, {"t": "Palo Santo-Salvia Blanca-Lavanda", "av": false}, {"t": "Palo Santo-Salvia Blanca-Canela", "av": false}, {"t": "Palo Santo-Salvia Blanca-Copal", "av": false}, {"t": "Palo Santo-Salvia Blanca-Mirra", "av": false}, {"t": "Palo Santo-Salvia Blanca-Romero", "av": false}, {"t": "Palo Santo-Salvia Blanca-Rosa", "av": false}, {"t": "Palo Santo-Salvia Blanca-Ruda", "av": false}, {"t": "Palo Santo-Salvia Blanca-Sangre de Dragon", "av": false}]}, {"id": 3404343, "n": "Esencia Solida Aromanza", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1tzh8mnrjk9fb.webp", "v": [{"t": "Diamante Negro", "av": true}, {"t": "Premium Lemon", "av": true}, {"t": "Nectar de los Dioses", "av": true}, {"t": "Lavanda del Valle", "av": true}, {"t": "Dulces Frutillas", "av": true}, {"t": "Berry Kiss", "av": true}, {"t": "Energia Limpia", "av": true}, {"t": "Vainillas Encantadas", "av": true}, {"t": "Sandalo Hindu", "av": true}, {"t": "Gardenias Flores Blancas", "av": true}, {"t": "Ocean Blue", "av": true}, {"t": "Rosa Real", "av": true}, {"t": "Brisa de Hogar", "av": true}, {"t": "Atrae Dinero", "av": true}, {"t": "Caricias de Algodon", "av": true}, {"t": "La Vida es Bella", "av": true}, {"t": "Naranja Pimienta", "av": false}, {"t": "Frutos Rojos", "av": false}]}, {"id": 3404023, "n": "Dif. Auto Marcianito Arom. 10ml", "pr": 7500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1tzjfmnri6qdv.webp", "v": [{"t": "Auto Sport", "av": true}, {"t": "Uva Dulce", "av": true}, {"t": "Citric Lemon", "av": true}, {"t": "Dulces Vainillas", "av": true}, {"t": "Ocean Blue", "av": true}, {"t": "La Vida Es Bella", "av": true}, {"t": "Coconut", "av": true}, {"t": "Hawaiin", "av": true}, {"t": "Mango Maracuya", "av": true}, {"t": "Naranja Pimienta", "av": true}]}, {"id": 3354915, "n": "Latas Coleccionables x30 con PortaSahume.", "pr": 20100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1sqpdmng58x9y.webp", "v": [{"t": "Palo Santo", "av": true}, {"t": "Elixir", "av": true}, {"t": "Tibetanos", "av": false}, {"t": "Magicos", "av": false}, {"t": "Momentos", "av": false}]}, {"id": 3086234, "n": "Difusor Auto AIRE PURO", "pr": 4500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1zvklmp2p1vof.png", "v": [{"t": "Limon Mediterraneo", "av": true}, {"t": "Invictus", "av": true}, {"t": "Uva y Floral", "av": true}, {"t": "One Ck", "av": true}, {"t": "Cool Water", "av": true}, {"t": "Agua Di Gio", "av": true}, {"t": "Vainilla Madera", "av": true}, {"t": "Kenzo Clasico", "av": false}, {"t": "Chicle", "av": false}, {"t": "Auto Nuevo", "av": false}, {"t": "Erba Pura", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Flores Blancas", "av": false}, {"t": "Damazco", "av": false}, {"t": "Verbena", "av": false}, {"t": "Olympea", "av": false}, {"t": "Cony Fresh", "av": false}, {"t": "Suavidad de Algodón", "av": false}, {"t": "Citrico", "av": false}, {"t": "Naranja Pimienta", "av": false}, {"t": "Te Verde", "av": false}]}, {"id": 3086033, "n": "Sahumerio Duendes Alquimistas", "pr": 1700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jh8hmlcfg4il.webp", "v": [{"t": "Copal Blanco", "av": true}, {"t": "Musk Black", "av": true}, {"t": "Real Champa", "av": true}, {"t": "Tulasi Sagrada", "av": true}, {"t": "Salvia Blanca", "av": true}, {"t": "Super Sandalo", "av": true}, {"t": "Vainillas", "av": false}, {"t": "Real Incienso", "av": false}, {"t": "Super Palo Santo", "av": false}, {"t": "Lavanda", "av": false}]}, {"id": 3085989, "n": "Sahumerio Resinas Magistrales", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jsf6mlcf1v71.webp", "v": [{"t": "Mirra Africana Consagrada", "av": true}, {"t": "Sandalo Hindu Consagrado", "av": true}, {"t": "Yagra de India Consagrada", "av": true}, {"t": "Incienso Blanco Consagrado", "av": true}, {"t": "Incienso Dulce Consagrado", "av": true}, {"t": "Copal Andino Consagrado", "av": true}, {"t": "Delicioso Benjui Consagrado", "av": true}, {"t": "Resina 7 Poderes Consagrado", "av": true}, {"t": "Variedad de Resinas Consagradas", "av": true}]}, {"id": 3085946, "n": "Sahumerio Magico XL (Arom.) x5", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jsf6mlcep390.webp"}, {"id": 3085931, "n": "Nuevos Sahumerios Rama Aromanza", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jsf6mlcel4z1.webp", "v": [{"t": "Energia Limpia", "av": false}, {"t": "Diamante Negro", "av": false}, {"t": "Abundancia", "av": false}, {"t": "Atrae Dinero", "av": false}, {"t": "Proteccion Energetica", "av": false}, {"t": "Ocean Blue", "av": false}, {"t": "Premium Lemon", "av": false}, {"t": "Naranja Pimienta", "av": false}, {"t": "Vainillas Encantadas", "av": false}, {"t": "Granada Mediterranea", "av": false}]}, {"id": 3085885, "n": "Sahumerio Mantra Equilibrium x12u.", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jh8hmlceaj51.webp", "v": [{"t": "Eucalyptus", "av": true}, {"t": "Om", "av": true}, {"t": "Incienso Palo Santo", "av": true}, {"t": "Yagra Palo Santo", "av": true}, {"t": "Ruda Romero", "av": false}, {"t": "Yagra Incienso", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Incienso", "av": false}, {"t": "Mirra", "av": false}, {"t": "7 Chakras", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Frutilla", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Rosa", "av": false}, {"t": "Canela Naranja", "av": false}, {"t": "Lluvia de Plata", "av": false}, {"t": "Anana Jazmin", "av": false}]}, {"id": 2851674, "n": "Sahumerio Elixir Slim", "pr": 2300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1bx4kmjcyz6vy.webp", "v": [{"t": "Fendy", "av": true}, {"t": "Flowers", "av": true}, {"t": "Olimpea", "av": true}, {"t": "212", "av": true}, {"t": "Amour amour", "av": true}, {"t": "Angel", "av": true}, {"t": "Invict", "av": true}, {"t": "Nº 5", "av": true}, {"t": "One Million", "av": true}, {"t": "Opium de YSL", "av": true}, {"t": "Scandal", "av": true}, {"t": "Vie Belle", "av": true}]}, {"id": 2809147, "n": "Difusor Aromanza 60 ml", "pr": 6000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1a9demixixzdt.webp", "v": [{"t": "Candy Grape (Felicidad)", "av": true}, {"t": "Lemon Pie (Calidez del Hogar)", "av": true}, {"t": "Miel y Almendras (Dulzura)", "av": true}, {"t": "Ocean Blue (Plenitud)", "av": true}, {"t": "Vainilla Sugar (Abundancia)", "av": true}, {"t": "Mix Floral (Alegria)", "av": true}, {"t": "Premium Lemon (Energia y Vitalidad)", "av": true}, {"t": "Coco Beach (Inspiracion)", "av": true}, {"t": "Naranja Pimienta (Atraccion)", "av": true}, {"t": "Esencias de la India (Humildad)", "av": false}, {"t": "Manzana Canela (Bienestar)", "av": false}, {"t": "Noche de Luna (Relax)", "av": false}]}, {"id": 2801510, "n": "Sahumerios Emociones Aromanza", "pr": 3100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tg4mitezuda.webp", "v": [{"t": "Curiosidad", "av": true}, {"t": "Plenitud", "av": true}, {"t": "Satisfaccion", "av": true}, {"t": "Amor Verdadero", "av": false}, {"t": "Gratitud", "av": false}, {"t": "Riqueza", "av": false}, {"t": "Calma", "av": false}, {"t": "Confianza", "av": false}, {"t": "Esperanza", "av": false}, {"t": "Alegria", "av": false}]}, {"id": 2512626, "n": "Aerosol Aromanza 280ml", "pr": 7500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzfl5mgqorj1r.webp", "v": [{"t": "PREMIUM LEMON", "av": true}, {"t": "NECTAR DE LOS DIOSES", "av": true}, {"t": "DIAMANTE NEGRO", "av": true}, {"t": "OCEAN BLUE", "av": true}, {"t": "NARANJA PIMIENTA", "av": true}, {"t": "GARDENIA Y FLORES BLANCAS", "av": true}, {"t": "VAINILLA", "av": true}, {"t": "CONFORT BABY", "av": true}, {"t": "NOCHE DE LUNA", "av": true}, {"t": "PASION ROSA", "av": true}, {"t": "BUBBLE GUM", "av": true}, {"t": "M. SHER", "av": true}, {"t": "EBANO MARFIL", "av": true}, {"t": "NAMASTE", "av": true}, {"t": "EXQUISITO RATNAMALA", "av": true}, {"t": "BERRY KISS", "av": true}, {"t": "FRUTOS ROJOS", "av": false}]}, {"id": 2192469, "n": "Esencias Hornillos Concentrada (Arom)", "pr": 2200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkulqf6mem0rlmt.webp", "v": [{"t": "Aqua Per L Uomo (Masculinidad)", "av": true}, {"t": "Berry Kiss (Dulzura de Hogar)", "av": true}, {"t": "Vainillas Encantadas (Abundancia)", "av": true}, {"t": "Coco Vainilla (Dicha y Satisfaccion)", "av": true}, {"t": "Naranja Pimienta (Atraccion)", "av": true}, {"t": "Premium Lemon (Abre Caminos)", "av": true}, {"t": "Real Champa (Espiritualidad)", "av": true}, {"t": "Taj Mahal (Honrar)", "av": true}, {"t": "Candy Grape (Felicidad)", "av": true}, {"t": "Titanium (Fortaleza)", "av": true}, {"t": "Ocean Blue (Plenitud)", "av": true}, {"t": "Gardenias Flores Blancas (Bienestar)", "av": true}, {"t": "Namaste (Agradecimiento)", "av": true}, {"t": "Elixir del Amor (Enamoramiento)", "av": true}, {"t": "Secretos del Himalaya (Altruismo)", "av": true}, {"t": "Lavandas del Valle (Anti Stress)", "av": true}, {"t": "Flor Oriental (Pureza)", "av": true}, {"t": "Mystic Garden (Renacer)", "av": true}, {"t": "Flowers Kenzo (Feminidad)", "av": true}, {"t": "Esencias de la India (Humildad)", "av": true}, {"t": "Ebano Marfil (Equilibrio)", "av": true}, {"t": "Nectar de los Dioses (Conexion Divina)", "av": true}, {"t": "Armonia Zen (Tranquilidad)", "av": true}, {"t": "Diamante Negro (Aqui y Ahora)", "av": true}, {"t": "Orquidea Salvaje (Deseo)", "av": true}, {"t": "Cereza Patchouli (Superacion)", "av": true}, {"t": "Frescura del Bosque (Liberacion)", "av": true}, {"t": "Limon y Naranja (Positividad)", "av": true}, {"t": "Pasion Rosa (Fascinacion)", "av": true}, {"t": "La Vida es Bella (Optimismo)", "av": false}, {"t": "Frutos Rojos (Empoderamiento)", "av": false}, {"t": "Hawaiian (Inspiracion)", "av": false}]}, {"id": 2192355, "n": "Sahumerios Elixir (Arom)", "pr": 3700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkulqf5mem09111.webp", "v": [{"t": "212", "av": true}, {"t": "Flowers", "av": true}, {"t": "Scandal", "av": true}, {"t": "Vie Belle", "av": true}, {"t": "Angel", "av": true}, {"t": "Fendy", "av": true}, {"t": "One Million", "av": true}, {"t": "Opium de YSL", "av": true}, {"t": "Amour Amour", "av": true}, {"t": "Olimpea", "av": true}, {"t": "Nro 5", "av": true}, {"t": "Invict", "av": true}]}, {"id": 2044709, "n": "ESFERAS ORGANICAS AROMANZA 7 CHAKRAS", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2cmgmdkchsjx.jpeg"}, {"id": 1332901, "n": "NUEVO SAHUMERIO PALO SANTO - ORGANICOS - MAGISTRALES BOLSA X 30", "pr": 6500, "img": null}, {"id": 1134220, "n": "Sahumerios Mini Tibetanos x 8 Varillas", "pr": 2800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1946a389bbf.webp", "v": [{"t": "Berry Kiss (Dulzura del Hogar)", "av": true}, {"t": "Vainillas Encantadas (Abundancia)", "av": true}, {"t": "Canela Mistica (Calidez)", "av": true}, {"t": "Energía Limpia (Limpieza Energética)", "av": true}, {"t": "Esencia de la India (Humildad)", "av": true}, {"t": "Mix de Fragancias", "av": true}, {"t": "Rosa Real (Amor)", "av": true}, {"t": "Exquisito Ratnamala (Gratitud)", "av": true}, {"t": "Diamante Negro (Aquí y Ahora)", "av": true}, {"t": "Naranja Pimienta (Atracción)", "av": false}, {"t": "Wanama Coco (Vitalidad Interior)", "av": false}, {"t": "Gardenia Flores Blancas (Bienestar)", "av": false}, {"t": "Super Palo Santo (Buena Onda)", "av": false}, {"t": "La Vida es Bella (Optimismo)", "av": false}, {"t": "Real Champa (Espiritualidad)", "av": false}, {"t": "Premium Lemon (Abre Caminos)", "av": false}, {"t": "Coconut (Paz Interior)", "av": false}]}, {"id": 1134186, "n": "Conos Cascada Aromanza x10 uds", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1946a21d92d.webp", "v": [{"t": "Naranja Pimienta", "av": false}, {"t": "Sándalo Hindú", "av": false}, {"t": "Energía Limpia", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Super Palo Santo", "av": false}, {"t": "Atrae Dinero", "av": false}, {"t": "Berry Kiss", "av": false}, {"t": "Esencias de la Inida", "av": false}, {"t": "Vainillas Encantadas", "av": false}, {"t": "Lavandas del Valle", "av": false}, {"t": "Coconut", "av": false}, {"t": "Rosa Real", "av": false}]}, {"id": 1043965, "n": "Sahumerio MINI Palo Santo Buena Onda AROMANZA", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193f12c71d6.webp", "v": [{"t": "PS/Yagra de la Abundancia", "av": true}, {"t": "PS/Super Palo Santo", "av": true}, {"t": "PS/Mix Variedad Aromatica", "av": true}, {"t": "PS/Rosa Real", "av": true}, {"t": "PS/Lavandas del Valle", "av": true}, {"t": "PS/Esencia de la India", "av": true}, {"t": "PS/Vainillas Encantadas", "av": true}, {"t": "PS/Diamante Negro", "av": true}, {"t": "PS/Naranja Pimienta", "av": true}, {"t": "PS/Sandalo Hindu", "av": true}, {"t": "PS/Energia Limpia", "av": false}, {"t": "PS/Atrae Dinero", "av": false}, {"t": "PS/La Vida es Bella", "av": false}, {"t": "PS/Miel Organica", "av": false}, {"t": "PS/Nectar de los Dioses", "av": false}, {"t": "PS/Fresias del Cabo", "av": false}, {"t": "PS/Real Champa", "av": false}, {"t": "PS/Jazmin del Pais", "av": false}, {"t": "PS/Dulces Frutillas", "av": false}, {"t": "PS/Coco Vainilla", "av": false}, {"t": "PS/Noches de Ensueño", "av": false}, {"t": "PS/Fragancia Oriental", "av": false}, {"t": "PS/Gardenias y Flores Blancas", "av": false}, {"t": "PS/Incienso Consagrado", "av": false}, {"t": "PS/Exquisito Ratnamala", "av": false}, {"t": "PS/Viva la Vida", "av": false}, {"t": "PS/Ebano Marfil", "av": false}, {"t": "PS/Frutos Rojos", "av": false}, {"t": "PS/Berry Kiss", "av": false}, {"t": "PS/Mirra Consagrada", "av": false}]}, {"id": 1043958, "n": "Conos Momentos x 12 Unid", "pr": 2300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193f11eb577.webp", "v": [{"t": "7 Poderes", "av": false}, {"t": "Abundancia", "av": false}, {"t": "Atrae Dinero", "av": false}, {"t": "Bienestar", "av": false}, {"t": "Buena Onda", "av": false}, {"t": "Dulzura", "av": false}, {"t": "Felicidad", "av": false}, {"t": "Limpieza", "av": false}, {"t": "Meditación", "av": false}, {"t": "Pasión", "av": false}, {"t": "Paz y Armonía", "av": false}, {"t": "Soltar", "av": false}]}, {"id": 773383, "n": "Difusor de Autos Aromanza 12ml", "pr": 5500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1sr56mng4q3n2.webp", "v": [{"t": "Naranja Pimienta", "av": true}, {"t": "Dulces Vainillas", "av": true}, {"t": "Auto Sport", "av": true}, {"t": "Coconut", "av": true}, {"t": "Dulce Uva", "av": true}, {"t": "Hawaiian", "av": true}, {"t": "Mango Maracuya", "av": true}, {"t": "Citronella", "av": true}, {"t": "Rosa Bulgara", "av": false}, {"t": "Citric Lemon", "av": false}]}, {"id": 753340, "n": "BOX KIT SAHUMERIOS ORGANICOS X30", "pr": 8000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_191c7f31a93.webp"}, {"id": 632408, "n": "ESFERAS MAGICAS X 4 COLGABLES AROMANZA X 1", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190fee3ebc6.webp", "v": [{"t": "Aroma a Cannabis", "av": false}, {"t": "Citronela", "av": false}, {"t": "4 Elementos", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Abre Caminos", "av": false}, {"t": "Abundancia", "av": false}, {"t": "Amor", "av": false}, {"t": "Armonía", "av": false}, {"t": "Bienestar", "av": false}, {"t": "Defumación Completa", "av": false}, {"t": "Destrabe", "av": false}, {"t": "Divina Ofrenda", "av": false}, {"t": "Fortuna", "av": false}, {"t": "Limpieza", "av": false}, {"t": "Protección", "av": false}, {"t": "Purificación", "av": false}, {"t": "Super Palo Santo", "av": false}]}, {"id": 630766, "n": "Sahumerios TIBETANOS PREMIUM X 8", "pr": 4700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190f530c71c.webp", "v": [{"t": "Secretos del Himalaya - \"Altruismo\"", "av": true}, {"t": "Mystic Garden - Renacer", "av": true}, {"t": "Pasión Rosa - \"Fascinación\"", "av": true}, {"t": "Ratnamala - \"Gratitud\"", "av": true}, {"t": "Taj Mahal - \"Honrar\"", "av": true}, {"t": "Orquídea Salvaje - \"Deseo\"", "av": true}, {"t": "Amor de Primavera - \"Regocijo\"", "av": true}, {"t": "Flor Oriental - \"Pureza\"", "av": true}, {"t": "Armonia Zen - Vence Todo", "av": true}, {"t": "Namasté - \"Unión\"", "av": false}, {"t": "Romance - \"Conexión\"", "av": false}, {"t": "Elixir del Amor - \"Enamoramiento\"", "av": false}, {"t": "Aque Per Iuomo - \"Atraccion\"", "av": false}, {"t": "Ocean Blue - Plenitud", "av": false}, {"t": "Dragon Imperial - Proteccion Total", "av": false}]}, {"id": 583383, "n": "SAHUMERIO MOMENTOS (5 VARILLAS) X 1", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190660af2e6.webp", "v": [{"t": "Felicidad", "av": true}, {"t": "Limpieza", "av": true}, {"t": "Pasión", "av": true}, {"t": "Soltar", "av": true}, {"t": "Abundancia", "av": false}, {"t": "Bienestar", "av": false}, {"t": "Buena Onda", "av": false}, {"t": "Dulzura", "av": false}, {"t": "Meditación", "av": false}, {"t": "Paz y Armonía", "av": false}]}, {"id": 583158, "n": "NUEVO SAHUM PS - ORG - MAG X 30", "pr": 6500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19065d2f90d.webp"}, {"id": 450284, "n": "CAJA PACK SAHUMERIOS AROMANZA C/PORTA SAHUMERIO X 1", "pr": 6400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19181fe4d60.webp"}, {"id": 395772, "n": "Sahumerio Tibetano SLIM Aromanza x 10", "pr": 2400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1zvjwmp2ommho.webp", "v": [{"t": "CITRONELA", "av": true}, {"t": "EBANO MARFIL", "av": true}, {"t": "MANZANA CANELA", "av": true}, {"t": "ATRAE DINERO", "av": false}, {"t": "ENERGIA LIMPIA", "av": false}, {"t": "FRAGANCIA ORIENTAL", "av": false}, {"t": "MIRRA CONSAGRADA", "av": false}, {"t": "7 PODERES", "av": false}, {"t": "BERRY KISS", "av": false}, {"t": "CANELA MISTICA", "av": false}, {"t": "COCONOUT", "av": false}, {"t": "DULCES FRUTILLAS", "av": false}, {"t": "ESENCIA DE LA INDIA", "av": false}, {"t": "FRUTOS ROJOS", "av": false}, {"t": "GARDENIA Y FLORES BLANCAS", "av": false}, {"t": "INCIENSO CONSAGRADO", "av": false}, {"t": "LA VIDA ES BELLA", "av": false}, {"t": "LAVANDAS DEL VALLE", "av": false}, {"t": "NARANJA PIMIENTA", "av": false}, {"t": "NOCHES ENSUEÑOS", "av": false}, {"t": "REAL CHAMPA", "av": false}, {"t": "REAL ROSE", "av": false}, {"t": "SANDALO HINDÚ", "av": false}, {"t": "SUPER PALO SANTO", "av": false}, {"t": "VAINILLAS ENCANTADAS", "av": false}, {"t": "VIVA LA VIDA", "av": false}, {"t": "MIX DE FRAGANCIAS", "av": false}, {"t": "PROTECCION ENERGETICA", "av": false}]}, {"id": 337988, "n": "PASTILLAS 7 CHAKRAS AROMANZA", "pr": 2200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18c400b4b4b.webp"}, {"id": 337986, "n": "Sahumerios Magistrales Aromanza x 8", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18c400909ef.webp", "v": [{"t": "Jazmín del Pais", "av": true}, {"t": "Sandalo Hindu", "av": true}, {"t": "Mix de Resinas", "av": true}, {"t": "Incienso Consagrado", "av": true}, {"t": "Real Champa", "av": true}, {"t": "Copal Andino", "av": true}, {"t": "Rosas Berry Kiss", "av": false}, {"t": "Incienso Blanco", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Delicioso Benjui", "av": false}, {"t": "Mirra Consagrada", "av": false}]}, {"id": 321696, "n": "Sahumerio MAGICOS Aromanza X 10", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bc97bacc2.webp", "v": [{"t": "Rosa Real", "av": false}, {"t": "Aqua Marine", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Energia Limpia", "av": false}, {"t": "Naranja-Pimienta", "av": false}, {"t": "Sandalo Hindú", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Esencia de la India", "av": false}, {"t": "Super Palo Santo", "av": false}, {"t": "Variedad Aromática", "av": false}, {"t": "Jazmin del Pais", "av": false}]}, {"id": 321692, "n": "Sahumerios PALO SANTO BUENA ONDA Aromanza X 8", "pr": 2100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18e32e17505.webp", "v": [{"t": "Fragancia Oriental", "av": true}, {"t": "Gardenias y Flores Blancas", "av": true}, {"t": "Energía Limpia", "av": false}, {"t": "Atrae Dinero", "av": false}, {"t": "Mix Variedad Aromática", "av": false}, {"t": "La Vida es Bella", "av": false}, {"t": "Miel Organica", "av": false}, {"t": "Néctar de los Dioses", "av": false}, {"t": "Fresias del Cabo", "av": false}, {"t": "Rosa Real", "av": false}, {"t": "Real Champa", "av": false}, {"t": "Dulces Frutillas", "av": false}, {"t": "Esencia de la India", "av": false}, {"t": "Jazmin del Pais", "av": false}, {"t": "Lavandas del Valle", "av": false}, {"t": "Berry Kiss", "av": false}, {"t": "Diamante Negro", "av": false}, {"t": "Ebano Marfil", "av": false}, {"t": "Exquisito Ratnamala", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Incienso Consagrado", "av": false}, {"t": "Naranja Pimienta", "av": false}, {"t": "Sandalo Hindu", "av": false}, {"t": "Super Palo Santo", "av": false}, {"t": "Viva la Vida", "av": false}]}, {"id": 321686, "n": "Sahumerio Tibetano Aromanza x 8", "pr": 4500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1tzjfmnrllrbd.webp", "v": [{"t": "Atrae Dinero - Abundancia", "av": true}, {"t": "Canela Mistica - Calidez", "av": true}, {"t": "Coconut - Paz Interior", "av": true}, {"t": "Esencia de la India - Humildad", "av": true}, {"t": "Exquisito Ratnamala - Gratitud", "av": true}, {"t": "Flores de Manzanilla - Calma", "av": true}, {"t": "Fragancia Oriental - Meditacion", "av": true}, {"t": "Green Bamboo - Suerte", "av": true}, {"t": "Incienso Consagrado - Iluminacion", "av": true}, {"t": "Jazmin del Pais - Placer", "av": true}, {"t": "Magia Asiatica - Buenas Vibras", "av": true}, {"t": "Manzana Canela - Relajante", "av": true}, {"t": "Mirra Consagrada - Ofrenda", "av": true}, {"t": "Pasteleria Francesa - Dulzura del Hogar", "av": true}, {"t": "Real Champa - Espiritualidad", "av": true}, {"t": "Reina de la Noche - Generosidad", "av": true}, {"t": "Rosa Real - Amor", "av": true}, {"t": "Salvia Blanca - Limpieza Energetica", "av": true}, {"t": "Sandalo Hindu - Purificacion", "av": true}, {"t": "Super Sandalo - Felicidad", "av": true}, {"t": "Titanium - Fortaleza", "av": true}, {"t": "Violetas de Persia - Revitalizante", "av": true}, {"t": "Choco Dubai (Deleite Exotico)", "av": true}, {"t": "Energia Reiki", "av": true}, {"t": "Diamante Negro - Aqui y Ahora", "av": false}, {"t": "Proteccion Energetica (Escudo Protector)", "av": false}, {"t": "Vrindavan", "av": false}, {"t": "Frescura del Bosque", "av": false}, {"t": "7 Poderes - 7 Energias", "av": false}, {"t": "Amazona Salvaje - Liberacion", "av": false}, {"t": "Berry Kiss - Dulzura del Hogar", "av": false}, {"t": "Capuccino Italiano - Deliciosas Tardes", "av": false}, {"t": "Chandan - Felicidad", "av": false}, {"t": "Citronella - Antimosquitos", "av": false}, {"t": "Coco Beach - Inspiracion", "av": false}, {"t": "Coco Vainilla - Dicha y Satisfaccion", "av": false}, {"t": "Copal Andino - Agradecimiento", "av": false}, {"t": "Cristobal Colon - Inspiracion", "av": false}, {"t": "Delicioso Benjui - Armonia del Hogar", "av": false}, {"t": "Dulces Frutillas - Buena Energia", "av": false}, {"t": "Ebano Marfil - Equilibrio", "av": false}, {"t": "Encanto de Chocolate - Calidez de Hogar", "av": false}, {"t": "Energia Limpia - Limpieza Energetica", "av": false}, {"t": "Exotic Opium - Misterio", "av": false}, {"t": "Frutos Rojos - Empoderamiento", "av": false}, {"t": "Gardenia y Flores Blancas - Bienestar", "av": false}, {"t": "Guia Espiritual - Vence Todo", "av": false}, {"t": "Krishna - Proteccion Completa", "av": false}, {"t": "La vida es bella - optimismo", "av": false}, {"t": "Lavandas del Valle - Anti Stress", "av": false}, {"t": "Miel Organica - Dulzura", "av": false}, {"t": "Mix de Fragancias - 8 Fragancias", "av": false}, {"t": "Naranja Pimienta - Atraccion", "av": false}, {"t": "Nectar de los Dioses - Conexion Divina", "av": false}, {"t": "Noche de Ensueños - Pasion", "av": false}, {"t": "Placeres del Paraiso - Espiritualidad", "av": false}, {"t": "Sai Flora - Contra Envidia", "av": false}, {"t": "Super Palo Santo - Buena Onda", "av": false}, {"t": "Vainillas Encantadas - Abundancia", "av": false}, {"t": "Yagra de la Abundancia - Prosperidad", "av": false}, {"t": "Prem. Lemon - Abre Camino", "av": false}, {"t": "Wanama Coco (Limpieza Total)", "av": false}, {"t": "Rosas de Arabia", "av": false}]}, {"id": 231172, "n": "Esferas Magicas Organica Caja X 4", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2078imp2owouj.webp", "v": [{"t": "4 ELEMENTOS", "av": true}, {"t": "ABUNDANCIA", "av": true}, {"t": "DESTRABE", "av": true}, {"t": "LIMPIEZA", "av": true}, {"t": "NARANJA PIMIENTA", "av": true}, {"t": "CITRONELLA", "av": true}, {"t": "ABRE CAMINOS", "av": true}, {"t": "AMOR", "av": true}, {"t": "ARMONIA", "av": true}, {"t": "FORTUNA", "av": true}, {"t": "PURIFICACION", "av": true}, {"t": "7 PODERES", "av": false}, {"t": "BIENESTAR", "av": false}, {"t": "PROTECCION", "av": false}, {"t": "SUPER PALOSANTO", "av": false}, {"t": "DIAMANTE NEGRO", "av": false}, {"t": "FRUTOS ROJOS", "av": false}, {"t": "CANNABIS", "av": false}, {"t": "DEFUMACION", "av": false}, {"t": "DIVINA OFRENDA", "av": false}]}]}, {"cat": "Sagrada Madre", "slug": "sagradamadre", "count": 36, "products": [{"id": 3728227, "n": "Difusores Varillas Tao Perfum", "pr": 7600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku25s9omqgiy8wc.png", "v": [{"t": "Yagra Hindu", "av": true}, {"t": "Limon Premium", "av": true}, {"t": "Vainilla Mistica", "av": true}, {"t": "Frutilla Dulce", "av": true}, {"t": "Nectar Celestial", "av": true}]}, {"id": 3414098, "n": "Sahumeerio Tao Triple X10u", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1udvnmnuhlemz.webp", "v": [{"t": "Flores Silvestres", "av": true}, {"t": "Gardenias", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Madera de Oriente", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Mil Flores", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Olibano", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Mirra", "av": false}, {"t": "Variedad", "av": false}]}, {"id": 2803388, "n": "Sahumerio Natural Premium Hierbas", "pr": 1700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17te4miuhfgn1.webp", "v": [{"t": "Olibano", "av": true}, {"t": "Palo Santo Ruda", "av": false}, {"t": "Yagra Natural", "av": false}, {"t": "Palo santo Fresias", "av": false}, {"t": "Palo Santo Olivano", "av": false}, {"t": "Palo Santo Sandalo", "av": false}, {"t": "Palo Santo Pachuli", "av": false}, {"t": "Palo Santo Romero", "av": false}, {"t": "Sandalo Natural", "av": false}]}, {"id": 2512588, "n": "Sahumerios India Black", "pr": 2300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzfnmmgqoe4h8.webp", "v": [{"t": "Origin (Confianza)", "av": true}, {"t": "Moon (Intuicion)", "av": false}, {"t": "Night (Amor Eterno)", "av": false}, {"t": "Enigma (Gueia Espiritual)", "av": false}, {"t": "Divine (Crecimiento)", "av": false}, {"t": "Astro (Fuerza Interior)", "av": false}, {"t": "Breeze (Calma)", "av": false}, {"t": "Mystic (Magic)", "av": false}, {"t": "Energy (Expansion)", "av": false}, {"t": "Shine (Iluminacion)", "av": false}, {"t": "Cosmos (Conexion)", "av": false}, {"t": "Eclipse (Union)", "av": false}]}, {"id": 2509891, "n": "Kit Herbal SAGRADA MADRE", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzfnmmgr4353k.webp", "v": [{"t": "Proteccion y Sanacion", "av": true}, {"t": "Purificacion", "av": true}, {"t": "Prosperidad", "av": false}, {"t": "Relajacion-Armonizacion", "av": false}]}, {"id": 2509872, "n": "Kit Pétalos de Amor", "pr": 8000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzr2imgr35h37.webp"}, {"id": 2482681, "n": "Sahumerio Oraculo Animales Sagrados Sagrada Madre", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjrmmgi55r8i.webp"}, {"id": 2482625, "n": "Sahumerios Cosmos Sagrada Madre", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzfmgmgl6kgd8.webp", "v": [{"t": "Mercurio", "av": true}, {"t": "Venus", "av": false}, {"t": "Saturno", "av": false}, {"t": "Luna", "av": false}, {"t": "Marte", "av": false}, {"t": "Sol", "av": false}, {"t": "Jupiter", "av": false}]}, {"id": 2482584, "n": "Sahumerios en Cono Cannabis Sagrada Madre", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjsamgi4iry9.webp", "v": [{"t": "Tropical Cookies", "av": true}, {"t": "Mango Kush", "av": true}, {"t": "Blue Dream", "av": true}, {"t": "Pineapple Pie", "av": true}, {"t": "Watermelon Wonder", "av": true}, {"t": "Purple hindu kush", "av": true}]}, {"id": 2482552, "n": "Sahumerio Palo Santo Corto (Sagrada Madre)", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjqumgi4a1b7.webp", "v": [{"t": "Sandalo", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Incienso", "av": true}]}, {"id": 2477757, "n": "Sahumerio Natural Premium", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjt2mggppmwj.webp", "v": [{"t": "Pomelo", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Frutilla", "av": false}, {"t": "Sandia", "av": false}, {"t": "Naranja", "av": false}, {"t": "Melon", "av": false}, {"t": "Mango", "av": false}, {"t": "Limon", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Uva", "av": false}]}, {"id": 1981208, "n": "Sahumeerios TAO - 7 Chakras", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_334op9vasomd34gt7m.webp"}, {"id": 1948460, "n": "Hierbas en Sobre x1 SAGRADA MADRE", "pr": 500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_334op9vp4tmctw5a02.webp", "v": [{"t": "Eucalipto", "av": true}, {"t": "Calendula", "av": true}, {"t": "Contrayerba", "av": true}, {"t": "Jarilla", "av": true}, {"t": "Lemongrass", "av": true}, {"t": "Manzanilla", "av": true}, {"t": "Naranja", "av": true}, {"t": "Te Verde", "av": true}, {"t": "Ruda", "av": false}, {"t": "Laurel", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Romero", "av": false}, {"t": "Rosas", "av": false}, {"t": "Salvia", "av": false}]}, {"id": 1891293, "n": "Sahume. Tao Anti Mosquitos (Citronela)", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfh15mcdjt6bg.jpeg"}, {"id": 1859828, "n": "Carbón Neutro x 24 Sagrada Madre", "pr": 3600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_z3abj66mc55naxn.webp"}, {"id": 1755262, "n": "Sahume. Tao Perfum", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuxmdgmgbhbijc.webp", "v": [{"t": "Dulce Frutilla", "av": true}, {"t": "Luminosa", "av": true}, {"t": "Sandalo Hindu", "av": true}, {"t": "Flor Imperial", "av": true}, {"t": "Diamante Negro", "av": false}, {"t": "Divina Perla", "av": false}, {"t": "Pistacho Chocolate", "av": false}, {"t": "Yagra Hindu", "av": false}, {"t": "Brisa Floral", "av": false}, {"t": "Pimienta Naranja", "av": false}, {"t": "Real Champa", "av": false}, {"t": "Vainilla Mística", "av": false}, {"t": "Prem. Lemon", "av": false}, {"t": "Canela Dulce", "av": false}, {"t": "Rosa Mosqueta", "av": false}, {"t": "Flores de Asia", "av": false}, {"t": "Mirra Encantada", "av": false}, {"t": "Belleza Dorada", "av": false}, {"t": "Encanto Floral", "av": false}, {"t": "Jardin de Fresias", "av": false}, {"t": "Azul Mistico", "av": false}, {"t": "Energia Limpia", "av": false}, {"t": "Jardin de Lavanda", "av": false}, {"t": "Nectar Celestial", "av": false}, {"t": "Dulce Cacao", "av": false}, {"t": "Brisa Marina", "av": false}, {"t": "Aura Floral", "av": false}, {"t": "Bosque de Bambu", "av": false}, {"t": "Amor", "av": false}, {"t": "Blend Oriental", "av": false}, {"t": "Jardin Secreto", "av": false}, {"t": "Lirio Real", "av": false}, {"t": "Vainilla Negra", "av": false}, {"t": "Sandalwood", "av": false}, {"t": "Bosque Calido", "av": false}]}, {"id": 1522292, "n": "Sahumerios TAO Black x5 unid", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_13htkz39wma6uf264.webp"}, {"id": 1522190, "n": "Bomba Carbon x12 unid.", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_13htkz36kma6tark5.webp", "v": [{"t": "Antimosquito", "av": false}, {"t": "Incienso", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Limpieza Energetica", "av": false}, {"t": "Yagra", "av": false}, {"t": "7 Poderes", "av": false}]}, {"id": 1435036, "n": "Sahum. Sagrado SAGRADA MADRE", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1c38leegblm9j37dwg.webp", "v": [{"t": "Encuentro Divino", "av": true}, {"t": "Kundalini", "av": true}, {"t": "Samadhi", "av": true}, {"t": "Amor Eterno", "av": false}, {"t": "Meditacion", "av": false}, {"t": "Tercer Ojo", "av": false}, {"t": "Yoga", "av": false}, {"t": "Guía Espiritual", "av": false}]}, {"id": 1239735, "n": "Sahumerios TAO Natu. x5 unid", "pr": 1100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7dsem7yu0tt9.webp", "v": [{"t": "Palo Santo - Reina de la Noche (Energía Protectora)", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Rosa", "av": false}, {"t": "Jazmin", "av": false}, {"t": "Palo Santo - Benjui (Conexión Ancestral)", "av": false}, {"t": "Sandalo (Purificacion)", "av": false}, {"t": "Limpieza Energetica", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Palo Santo Ratnamala", "av": false}, {"t": "Palo Santo Rosa Mosqueta", "av": false}]}, {"id": 1024865, "n": "Sahumerio Maha Blend Masala", "pr": 4300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193bb84f2c3.webp"}, {"id": 985331, "n": "Carbon Defumador con Hierbas x 12 Unid.", "pr": 4700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193ab5f3333.png"}, {"id": 683130, "n": "Sahumerio Ritual SAGRADA MADRE", "pr": 2900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_191c7ac4878.jpeg", "v": [{"t": "Luna Llena", "av": true}, {"t": "Cacao", "av": true}, {"t": "Tranquilidad", "av": true}, {"t": "Purificación", "av": true}, {"t": "Fuerza Interior", "av": true}, {"t": "Limpieza Energética", "av": true}, {"t": "Brillar", "av": true}, {"t": "Amor Propio", "av": true}, {"t": "Gratitud", "av": true}, {"t": "Manifestar", "av": true}, {"t": "Abundancia", "av": true}, {"t": "Empoderamiento", "av": true}]}, {"id": 611549, "n": "Sahumito Caja x5", "pr": 9500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190c69278af.webp", "v": [{"t": "Alcanfor", "av": true}, {"t": "Calendula manzanilla", "av": true}, {"t": "Canela anis", "av": true}, {"t": "Copal", "av": true}, {"t": "Estoraque-Alcanfor", "av": true}, {"t": "Rosas", "av": true}, {"t": "Salvia Blanca", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Yagra Olibano", "av": true}, {"t": "7 Hierbas", "av": false}, {"t": "Incienso", "av": false}, {"t": "Mirra - Palo Santo", "av": false}, {"t": "Naranja citronella", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Romero", "av": false}, {"t": "Ruda", "av": false}, {"t": "Flores Aromaticas", "av": false}, {"t": "Hierbas Maderas", "av": false}, {"t": "Resinas Especiales", "av": false}]}, {"id": 611536, "n": "Bomba carbon Sagrada Madre x 24 c/aromas", "pr": 5100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190c6855933.webp"}, {"id": 611401, "n": "BOMBITAS 7 CHAKRAS SAGRADA MADRE", "pr": 1900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190c611aba8.webp"}, {"id": 583145, "n": "SAHUMERIO PALO SANTO SAGRADA MADRE X 20 VARILLAS", "pr": 4500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19065ca178b.webp", "v": [{"t": "Palo Santo – Jengibre", "av": false}, {"t": "Palo Santo - Fresias", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Palo Santo – Violeta", "av": false}, {"t": "Palo Santo - Pachuli", "av": false}, {"t": "Copal", "av": false}, {"t": "Magnolias", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Palo Santo - Rosa", "av": false}, {"t": "Palo Santo - Vainilla", "av": false}, {"t": "Palo Santo - Yagra", "av": false}, {"t": "Palo Santo - Mirra", "av": false}, {"t": "Jazmin - Rosas", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Te verde - Champa", "av": false}, {"t": "Incienso", "av": false}, {"t": "Lemongrass", "av": false}, {"t": "Yagra", "av": false}, {"t": "Ruda - Romero", "av": false}, {"t": "Sangre de Dragon", "av": false}, {"t": "Rosas", "av": false}, {"t": "Reina de la Noche - Lavanda", "av": false}, {"t": "Gardenia Calendula", "av": false}, {"t": "Nardo - Olibano", "av": false}, {"t": "Palo Santo - Citronela - Naranja", "av": false}, {"t": "Palo Santo – Jamin", "av": false}, {"t": "Palo Santo – Lavanda", "av": false}, {"t": "Palo Santo – Romero", "av": false}, {"t": "Palo Santo – Sandalo", "av": false}]}, {"id": 547659, "n": "SAHUMITO X UNID. SAGRADA MADRE VS AROMAS", "pr": 2200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18fcffc10cc.webp", "v": [{"t": "Copal", "av": true}, {"t": "Estoraque y alcanfor", "av": true}, {"t": "Naranja Citronela", "av": true}, {"t": "Canela Anís", "av": false}, {"t": "Salvia Blanca", "av": false}, {"t": "Mirra Palo Santo", "av": false}, {"t": "Rosas", "av": false}, {"t": "Yagra", "av": false}, {"t": "Sandalo", "av": false}, {"t": "7 Hierbas", "av": false}, {"t": "Incienso", "av": false}, {"t": "Blanco Yagra", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Ruda", "av": false}, {"t": "Romero", "av": false}, {"t": "Calendula Manzanilla", "av": false}]}, {"id": 409521, "n": "SAHUMERIO ARTESANO X 5 SAGRADA MADRE", "pr": 1900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18d9052ee34.webp", "v": [{"t": "Incienso", "av": false}, {"t": "Palo Santo Fresias", "av": false}, {"t": "Palo Santo Incienso", "av": false}, {"t": "Palo Santo Lavanda", "av": false}, {"t": "Palo Santo Pachuli", "av": false}, {"t": "Palo Santo Romero", "av": false}, {"t": "Palo Santo Ruda", "av": false}, {"t": "Palo Santo Sandalo", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Ruda Romero e Incienso", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Yaga", "av": false}]}, {"id": 337938, "n": "DEFUMACION ACTIVADA BOMBITA CAJA X 8 SAGRADA MADRE", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18c3fcc589e.webp", "v": [{"t": "Estoraque-Alcanfor", "av": true}, {"t": "Yagra-Canela", "av": false}, {"t": "7 Elementos Puros", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "7 Hierbas-Copal", "av": false}, {"t": "Benjui-Almizcle", "av": false}, {"t": "Mirra-Incienso (Olibano)", "av": false}, {"t": "Limpieza Energetica", "av": false}]}, {"id": 320427, "n": "Sahumerio en POLVO Sagrada Madre", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bb9d69982.jpeg", "v": [{"t": "7 Poderes", "av": true}, {"t": "Alcanfor con Laurel", "av": true}, {"t": "Benjuí con Estoraque", "av": true}, {"t": "Citronella con Naranja", "av": true}, {"t": "Jazmín con Manzanilla", "av": true}, {"t": "Lavanda con Flores de Lavanda", "av": true}, {"t": "Limpieza Energética", "av": true}, {"t": "Rosa con Pétalos de Rosa", "av": true}, {"t": "Sándalo de la India", "av": true}, {"t": "Vainilla con Incienso", "av": true}, {"t": "Palo Santo", "av": false}, {"t": "Yagra con Madera del Oriente", "av": false}]}, {"id": 320406, "n": "Sahumerio LINEA HIERBAS Sagrada Madre X9unid", "pr": 2800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bb9c2b02f.jpeg", "v": [{"t": "CALENDULA - MANZANILLA - INCIENSO", "av": true}, {"t": "CANELA- ANIS-OLIBANO", "av": true}, {"t": "EUCALIPTO - LAUREL - CEDRO", "av": true}, {"t": "INCIENSO BLACO PURO", "av": true}, {"t": "LAVANDA - OLIBANO", "av": true}, {"t": "ROSAS - OLIBANO", "av": true}, {"t": "SALVIA BLANCA", "av": true}]}, {"id": 320382, "n": "Sahumerio BOTANICO Sagrada Madre x6unid", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bb9a61014.jpeg", "v": [{"t": "CLAVO DE OLOR ROSAS", "av": true}, {"t": "GARDENIAS -CALENDULA", "av": true}, {"t": "JAZMIN-ROSAS", "av": true}, {"t": "LAVANDA", "av": true}, {"t": "TE VERDE- CHAMPA", "av": true}, {"t": "FRESIA", "av": true}, {"t": "MAGNOLIA", "av": true}, {"t": "NARDO OLIBANO", "av": true}]}, {"id": 320381, "n": "Sahumerio YAGRA Sagrada Madre x6unid.", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bb9a28e9d.jpeg", "v": [{"t": "YAGRA VIOLETA Y LAVANDA", "av": true}, {"t": "YAGRA ORQUIDEAS Y LAUREL", "av": true}, {"t": "YAGRA MANZANILLA Y OLIBANO", "av": true}, {"t": "YAGRA ROSA Y VAINILLA", "av": true}]}, {"id": 320356, "n": "Sahume. PALO SANTO Varios Aromas Sagrada Madre", "pr": 2300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bb991dcc5.jpeg", "v": [{"t": "Ruda", "av": true}, {"t": "Yagra", "av": true}, {"t": "Canela", "av": true}, {"t": "Champa", "av": true}, {"t": "Copal", "av": true}, {"t": "Fresias", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Rosas", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Mirra", "av": true}, {"t": "Romero", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Violetas", "av": true}, {"t": "Incienso", "av": true}, {"t": "Salvia", "av": true}, {"t": "Palo Santo", "av": false}, {"t": "Pachuli", "av": false}, {"t": "Vainilla", "av": false}, {"t": "SURTIDO (Aromas Disponibles)", "av": false}]}, {"id": 320334, "n": "SAHUMERIO NATURALES SAGRADA MADRE", "pr": 2700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bb983f093.jpeg", "v": [{"t": "RUDA ROMERO INCIENSO NATURAL", "av": true}, {"t": "SANDALO", "av": true}, {"t": "INCIENSO", "av": true}, {"t": "CITRONELLA-NARANJA-PALO SANTO", "av": true}, {"t": "COPAL", "av": true}, {"t": "MIRRA NATURAL", "av": true}, {"t": "YAGRA", "av": true}, {"t": "AMBAR", "av": true}, {"t": "PACHULI", "av": true}, {"t": "BENJUI", "av": true}, {"t": "MIRRA OLIBANO", "av": true}, {"t": "SALVIA BLANCA", "av": true}]}]}, {"cat": "Iluminarte", "slug": "iluminarte", "count": 14, "products": [{"id": 3643044, "n": "Sahumerio Iluminarte Rectangular x30", "pr": 2700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku21i9xmpe7sdyd.webp", "v": [{"t": "LEMON", "av": false}, {"t": "STRAWBERRY", "av": false}, {"t": "BERRIES", "av": false}, {"t": "LAVENDER", "av": false}, {"t": "COCONUT", "av": false}, {"t": "WATER MELON", "av": false}, {"t": "SWEET ROSE", "av": false}, {"t": "SANDAL", "av": false}, {"t": "AQUA", "av": false}, {"t": "CHOCOLATE", "av": false}, {"t": "MANGO", "av": false}, {"t": "SALVIA BLANCA", "av": false}, {"t": "LEMON GRASS", "av": false}, {"t": "JASMINE", "av": false}, {"t": "GREEN APPLE", "av": false}, {"t": "CINNAMON", "av": false}, {"t": "PINEAPPLE", "av": false}, {"t": "LIME", "av": false}, {"t": "PEACH", "av": false}, {"t": "MELON", "av": false}, {"t": "CINNAMON APPLE", "av": false}]}, {"id": 3431352, "n": "Oraculo de las Piedras", "pr": 10100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1va8dmo05wz6w.webp"}, {"id": 3285256, "n": "Sahumerio Mantra 7 Chakras", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1qb8ommw79v7i.webp"}, {"id": 3086123, "n": "Difusor Iluminarte Prestige 60ml", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jh9omlcg1q4c.webp", "v": [{"t": "Mango Maracuya", "av": true}, {"t": "Cereza Patchouli", "av": true}, {"t": "Coconut", "av": true}, {"t": "Choco Dubai", "av": true}, {"t": "Frutilla Dulce", "av": true}, {"t": "Limon y Naranja", "av": true}, {"t": "Tuttu Frutti Gum", "av": true}, {"t": "Uva Dulce", "av": true}, {"t": "Agua Marina", "av": true}, {"t": "Angel Baby", "av": true}, {"t": "Canela", "av": true}, {"t": "Citric Lemon", "av": true}, {"t": "Citronella Organica", "av": true}, {"t": "Lavandas del Valle", "av": true}, {"t": "Papaya Tropical", "av": true}, {"t": "Rosa Bulgara", "av": true}, {"t": "Mil Flores", "av": true}, {"t": "Hawaiian", "av": true}, {"t": "Granada Mediterranea", "av": true}, {"t": "Cony", "av": true}, {"t": "Amanecer en el Cairo", "av": true}, {"t": "Azul Profundo", "av": true}, {"t": "Brisa de Verbena", "av": true}, {"t": "Delicias del Sur", "av": true}, {"t": "Divina Orquidea", "av": true}, {"t": "Fresias del Eden", "av": true}, {"t": "Oro Rubi", "av": true}, {"t": "Violetas de los Alpes", "av": true}, {"t": "Caricias de Algodon", "av": true}, {"t": "Dulce Vainilla", "av": false}, {"t": "Pimpollos de Jazmin", "av": false}]}, {"id": 2320084, "n": "Textil Ilum. 200ml Cristal", "pr": 4100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkurk3cmfgz492t.webp", "v": [{"t": "Cony", "av": false}, {"t": "Limon y Naranja", "av": false}, {"t": "Cher", "av": false}, {"t": "Scandal", "av": false}, {"t": "Rocio", "av": false}, {"t": "Coco Vainilla", "av": false}, {"t": "Mango Maracuya", "av": false}, {"t": "One Million", "av": false}, {"t": "La Vida es Bella", "av": false}, {"t": "Flores Blancas", "av": false}, {"t": "Bubble", "av": false}, {"t": "Paula C.", "av": false}, {"t": "Flowers", "av": false}, {"t": "Polo", "av": false}]}, {"id": 2131368, "n": "Difusor para auto Iluminarte 10ml.", "pr": 5600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku6bwume6j6y11.webp", "v": [{"t": "AUTO SPORT", "av": true}, {"t": "CITRIC ORANGE", "av": true}, {"t": "LA VIDA ES BELLA", "av": true}, {"t": "MADERAS DE SANDALO", "av": true}, {"t": "PIMPOLLOS DE JAZMIN", "av": true}, {"t": "HAWAIIAN", "av": false}, {"t": "MIX FLORAL", "av": false}, {"t": "OCEAN BLUE", "av": false}, {"t": "SWEET CANDY", "av": false}, {"t": "PUMITA", "av": false}]}, {"id": 1890992, "n": "Sahumerio SAC 7 Chakras", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfgy1mcdh8bki.webp"}, {"id": 1890928, "n": "Sahumerio Iluminarte India Rectangular X12 varillas", "pr": 1300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfh36mcdgnpin.webp", "v": [{"t": "Citronela", "av": false}, {"t": "Yagra-Incienso", "av": false}, {"t": "Corteza de Benjui", "av": false}, {"t": "Vainilla Africana", "av": false}, {"t": "Madera de Sandalo", "av": false}, {"t": "Mirra de Turquia", "av": false}, {"t": "Incienso Mistico", "av": false}, {"t": "Fresas de la Patagonia", "av": false}, {"t": "Jazmin del Cabo", "av": false}, {"t": "Canela-Manzana", "av": false}, {"t": "Real Champa", "av": false}, {"t": "Sandal Wood-Vainilla", "av": false}, {"t": "Rosa Bulgara", "av": false}, {"t": "Yagra-Palo Santo", "av": false}, {"t": "Magnolia-Vainilla", "av": false}, {"t": "Copal-Palo Santo", "av": false}, {"t": "Incienso-Palo Santo", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Lavanda-Menta", "av": false}, {"t": "Cedro-Verbena", "av": false}, {"t": "Ruda-Romero", "av": false}, {"t": "Mirra-Palo Santo", "av": false}, {"t": "Ambar-Miel", "av": false}]}, {"id": 950175, "n": "Esencia aceite para hornito ILUMINARTE 10ML", "pr": 1700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1931b42eed6.webp", "v": [{"t": "PALO SANTO", "av": true}, {"t": "CANELA", "av": true}, {"t": "VIOLETA", "av": true}, {"t": "COCO", "av": true}, {"t": "SWEET CANDY", "av": true}, {"t": "EUCALIPTO", "av": true}, {"t": "NARANJA PIMIENTA", "av": true}, {"t": "Reina de la noche", "av": true}, {"t": "7 poderes", "av": true}, {"t": "ROMERO", "av": true}, {"t": "RUDA", "av": true}, {"t": "TERNURAS BABY", "av": true}, {"t": "PIMPOLLOS JAZMIN", "av": true}, {"t": "REAL CHAMPA", "av": true}, {"t": "MENTA", "av": true}, {"t": "UVA DULCE", "av": true}, {"t": "FRUTILLA", "av": true}, {"t": "VAINILLA", "av": true}, {"t": "CITRONELA", "av": true}, {"t": "MARACUYA", "av": true}, {"t": "PATCHULI", "av": true}, {"t": "ROSA BULGARA", "av": true}, {"t": "Yagra", "av": true}, {"t": "Bergamota", "av": true}, {"t": "Nardo", "av": true}, {"t": "Exquisito Ratnamala", "av": true}, {"t": "Opium", "av": true}, {"t": "Choco Dubai", "av": true}, {"t": "SANDALO HINDÚ", "av": false}, {"t": "ENERGIA LIMPIA", "av": false}, {"t": "LIMON", "av": false}, {"t": "INCIENSO", "av": false}, {"t": "DULCE MIEL", "av": false}, {"t": "BENJUÍ", "av": false}, {"t": "ALMIZCLE", "av": false}, {"t": "MIRRA CONSAGRADA", "av": false}, {"t": "MAGNOLIAS", "av": false}, {"t": "MEDITACION", "av": false}, {"t": "AMBAR", "av": false}, {"t": "BERRY KISS", "av": false}, {"t": "MADERA ORIENTAL", "av": false}, {"t": "NOCHES ENSUEÑO", "av": false}, {"t": "LAVANDA FRANCESA", "av": false}, {"t": "7 CHAKRAS", "av": false}, {"t": "FRUTOS ROJOS", "av": false}, {"t": "SPA RELAX", "av": false}, {"t": "FRESIAS", "av": false}, {"t": "AZAHAR", "av": false}, {"t": "ALMENDRA", "av": false}, {"t": "GARDENIA Y FLORES BLANCAS", "av": false}, {"t": "MANGO", "av": false}, {"t": "Caricias de algodon", "av": false}]}, {"id": 945494, "n": "SAHUMERIOS ILUMINARTE INDIA LARGOS 40CM (10 VARILLAS)", "pr": 3900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1930e1e20f3.webp", "v": [{"t": "Citronela", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Limon", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Sándalo", "av": false}]}, {"id": 773376, "n": "Aromatizante de Auto 12 ml Flores", "pr": 6900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_191eb0e3c28.webp"}, {"id": 488464, "n": "VELA SOJA VOTIVA ETIQUETA NEGRA ILUMINARTE", "pr": 4200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18f0b6b0a91.webp", "v": [{"t": "Uva Dulce", "av": true}, {"t": "Lavanda Francesa", "av": true}, {"t": "Viva la Vida", "av": true}, {"t": "Noches Ensueños", "av": false}, {"t": "Magnolia Vainilla", "av": false}, {"t": "Esencia de la India", "av": false}, {"t": "Vainillas Africanas", "av": false}]}, {"id": 452820, "n": "Sahumerio Hexagonal ILUMINARTE India", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18e42455d1a.webp", "v": [{"t": "MIL FLORES", "av": false}, {"t": "MIRRA", "av": false}, {"t": "PALO SANTO", "av": false}, {"t": "PATCHOULY", "av": false}, {"t": "ROSA BULGARA", "av": false}, {"t": "SANDAL WOOD", "av": false}, {"t": "SANDALO", "av": false}, {"t": "SUPER SANDALO", "av": false}, {"t": "VAINILLA", "av": false}, {"t": "VIOLETA", "av": false}, {"t": "CITRONELLA", "av": false}, {"t": "ROMERO", "av": false}, {"t": "ATRAE DINERO", "av": false}, {"t": "MANZANA VERDE", "av": false}, {"t": "LLUVIA DE PLATA", "av": false}, {"t": "LLUVIA DE ORO", "av": false}, {"t": "7 PODERES", "av": false}, {"t": "REINA DE LA NOCHE", "av": false}, {"t": "BENJUI", "av": false}, {"t": "CHAMPA", "av": false}, {"t": "COCONUT", "av": false}, {"t": "FRUTILLA", "av": false}, {"t": "INCIENSO", "av": false}, {"t": "JAZMIN", "av": false}, {"t": "LAVANDA", "av": false}, {"t": "LIMÒN", "av": false}, {"t": "7 CHAKRAS", "av": false}, {"t": "ENERGIA REIKI", "av": false}]}, {"id": 278385, "n": "CONOS CASCADA X 10 UN. (bolsita)", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a4b382bc5.jpeg"}]}, {"cat": "Real Essenze", "slug": "realessenze", "count": 31, "products": [{"id": 3808732, "n": "Repuesto Difusores Masala x 500 ml", "pr": 13000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku27q0fmqpt5cof.webp", "v": [{"t": "Fresh", "av": true}, {"t": "Frutos Rojos", "av": true}, {"t": "Limon", "av": true}, {"t": "Naranja-Pimienta", "av": true}, {"t": "Pistacho", "av": true}, {"t": "Sandalo Hindu", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Coco-Vainilla", "av": false}, {"t": "Lavanda", "av": false}]}, {"id": 3796665, "n": "PULSERA HILO ROJO OJO TURCO TRENZADO CON PERLAS", "pr": 1800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2743vmql1ylb7.webp"}, {"id": 3796510, "n": "Aromatizante Textil Essenze 200ml", "pr": 4600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2741umql12rn3.webp", "v": [{"t": "Caricia", "av": true}, {"t": "Champa", "av": true}, {"t": "Durazno Blanco", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Kid", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Naranja-Pimienta", "av": true}, {"t": "Papaya-Durazno", "av": true}, {"t": "Rosa", "av": true}, {"t": "Sandalo-Naranja", "av": true}, {"t": "Uva", "av": true}, {"t": "Aqua", "av": false}, {"t": "Coco-Lima", "av": false}, {"t": "Coco-Vainilla", "av": false}, {"t": "Cony", "av": false}, {"t": "Fresh", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Limon", "av": false}, {"t": "Sandalo Hindu", "av": false}, {"t": "Vainilla", "av": false}]}, {"id": 3169173, "n": "Rocio Aurico Real Essenze 250ml", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1lydpmm2mlt5o.webp", "v": [{"t": "Meditacion (Azul)", "av": true}, {"t": "Abundancia (Amarillo)", "av": false}, {"t": "Atraccion (Rosa)", "av": false}, {"t": "Felicidad (Verde)", "av": false}, {"t": "Fuerza Espiritual (Rojo)", "av": false}, {"t": "Paz Mental (Celeste)", "av": false}, {"t": "Purificacion (Blanco)", "av": false}]}, {"id": 3021865, "n": "Aromatizante Real Essenze 400ml Linea Tropical", "pr": 7500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1hai3mkv6lgnw.webp", "v": [{"t": "Anana", "av": true}, {"t": "Sandia", "av": true}, {"t": "Banana", "av": true}, {"t": "Maracuya", "av": true}, {"t": "Pera", "av": true}, {"t": "Mango", "av": false}]}, {"id": 3021852, "n": "DIFUSOR 100ML MASALA CON FILTRO", "pr": 4200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1hahjmkv6a1ky.webp"}, {"id": 2793553, "n": "PULSERA HILO ROJO OJO TURCO TRENZADO", "pr": 1800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tg4mitfy11o.png"}, {"id": 2793459, "n": "Porta Sahume. Metal Red. Frases Est.", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tdwmirjo4xj.jpeg"}, {"id": 2793441, "n": "Fluidos Esotericos 1 Litro", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tfemirjf7z7.webp", "v": [{"t": "Lava Casa", "av": true}, {"t": "Vence Todo", "av": true}, {"t": "Ojo Turco", "av": true}, {"t": "San la Muerte", "av": true}, {"t": "Gauchito Gil", "av": true}, {"t": "Atrae Dinero", "av": false}, {"t": "Destrabe", "av": false}, {"t": "Progreso", "av": false}]}, {"id": 2482229, "n": "Aceite en Blister Surtido x50 Real Essenze", "pr": 73600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjs9mgi2nbdf.jpeg"}, {"id": 2020970, "n": "Vela de Soja Lata Mandala Chica", "pr": 6300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo1amdf6da9p.webp", "v": [{"t": "Surtido", "av": true}]}, {"id": 2020930, "n": "Porta Sahumerio METAL Circular", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo22mdf64lri.webp", "v": [{"t": "Surtido", "av": true}]}, {"id": 2020490, "n": "Hornillo Electrico MDF Vitro Fusion", "pr": 21500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo12mdf5lj5i.webp"}, {"id": 1332904, "n": "Aromatizante de Almohadas x150 ml", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ec1u1m97yucko.webp", "v": [{"t": "Lavanda", "av": true}, {"t": "Tilo", "av": true}, {"t": "31 Hierbas", "av": true}, {"t": "Eucalipto", "av": true}, {"t": "Menta-Limon", "av": true}, {"t": "Manzanilla", "av": false}]}, {"id": 1270344, "n": "Colgante Atrapa Sueños Essenze GRANDE", "pr": 6500, "img": null}, {"id": 1270343, "n": "Colgante Atrapa Sueños Essenze CHICO", "pr": 5000, "img": null}, {"id": 1240192, "n": "PORTA SAHUMERIO METAL (ESSENZE)", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7dqrm7yu50k7.webp", "v": [{"t": "Mariposa", "av": true}, {"t": "Buho", "av": false}, {"t": "Elefante", "av": false}]}, {"id": 1186815, "n": "Aromatizante Textil Real Essenze CRISTAL 500ml", "pr": 7700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7gbsm6r092wt.webp"}, {"id": 1178818, "n": "Difusor Masala 60ml", "pr": 3600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_194cc24e30a.webp", "v": [{"t": "VAINILLA", "av": true}, {"t": "FRUTOS ROJOS", "av": true}, {"t": "LAVANDA", "av": true}, {"t": "SÁNDALO HINDÚ", "av": true}, {"t": "COCO-VAINILLA", "av": true}, {"t": "NARANJA-PIMIENTA", "av": true}, {"t": "FRESH", "av": true}, {"t": "LIMON", "av": true}]}, {"id": 1144544, "n": "Aromatizante Textil Essenze CRISTAL x 250 ml", "pr": 4600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7l7qm8n2bt5r.jpeg", "v": [{"t": "Coco - Lima", "av": true}, {"t": "Durazno Blanco", "av": true}, {"t": "Bergamota Menta", "av": false}, {"t": "Kid", "av": false}, {"t": "Manzana - Canela", "av": false}, {"t": "Naranja Pimienta Negra", "av": false}, {"t": "Te Verde y Limon", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Aqua", "av": false}, {"t": "Caricia", "av": false}, {"t": "Champa", "av": false}, {"t": "Coco - Vainilla", "av": false}, {"t": "Cony", "av": false}, {"t": "Fresh", "av": false}, {"t": "Frutilla", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Jazmin", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Lavanda - Manzanilla", "av": false}, {"t": "Limon", "av": false}, {"t": "Mandarina", "av": false}, {"t": "Maracuya", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Papaya - Durazno", "av": false}, {"t": "Rosa", "av": false}, {"t": "Sandalo - Naranja", "av": false}, {"t": "Sandalo Hindu", "av": false}, {"t": "Uva", "av": false}, {"t": "Tilo", "av": false}, {"t": "Magnolia", "av": false}, {"t": "Gardenia", "av": false}, {"t": "Eucaliptus", "av": false}, {"t": "Durazno", "av": false}, {"t": "Papaya", "av": false}]}, {"id": 1144534, "n": "Difusor Varillas Essenze x 60 ml", "pr": 6000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19483a08c74.webp", "v": [{"t": "Aqua", "av": false}, {"t": "Bergamota Menta", "av": false}, {"t": "Caricia", "av": false}, {"t": "Champa", "av": false}, {"t": "Coco - Lima", "av": false}, {"t": "Coco - Vainilla", "av": false}, {"t": "Cony", "av": false}, {"t": "Durazno Blanco", "av": false}, {"t": "Fresh", "av": false}, {"t": "Frutilla", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Gardenia - Vainilla", "av": false}, {"t": "Jazmin", "av": false}, {"t": "Kid", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Lavanda - Manzanilla", "av": false}, {"t": "Limon", "av": false}, {"t": "Mandarina", "av": false}, {"t": "Manzana - Canela", "av": false}, {"t": "Maracuya", "av": false}, {"t": "Naranja Pimienta Negra", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Papaya - Durazno", "av": false}, {"t": "Rosa", "av": false}, {"t": "Sandalo - Naranja", "av": false}, {"t": "Sandalo Hindu", "av": false}, {"t": "Te Verde y Limon", "av": false}, {"t": "Uva", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Aromas de la India", "av": false}]}, {"id": 1042688, "n": "Aromatizante Textil ESSENZE PREMIUM 500ml Ambar", "pr": 8400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193eab8afad.webp", "v": [{"t": "Coco - Lima - Jengibre", "av": false}, {"t": "Palo Santo - Mandarina", "av": false}, {"t": "Caléndula - Magnolia", "av": false}, {"t": "Canela - Vainilla - Sándalo", "av": false}, {"t": "Frutos Rojos - Ylang Ylang", "av": false}, {"t": "Lavanda - Manzanilla - Menta", "av": false}, {"t": "Naranja - Patchouly - Pimienta Rosa", "av": false}, {"t": "Olíbano - Rosa - Tilo", "av": false}, {"t": "Orquídea Negra", "av": false}, {"t": "Papaya - Durazno - Limón", "av": false}, {"t": "Salvia - Jazmín - Peonia", "av": false}, {"t": "Té Oriental - Champa", "av": false}]}, {"id": 1042685, "n": "Repuesto Difusor Essenze x 500ml", "pr": 14400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193eaaf7524.webp", "v": [{"t": "Aqua", "av": true}, {"t": "Esencia de la India", "av": true}, {"t": "Rosa", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Caricia", "av": true}, {"t": "Cony", "av": true}, {"t": "Uva", "av": true}, {"t": "Coco-Vainilla", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Naranja Pimienta Negra", "av": false}, {"t": "Durazno Blanco", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Sandalo Hindu", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Kid", "av": false}, {"t": "Limon", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Jazmin", "av": false}, {"t": "Sandalo-Naranja", "av": false}, {"t": "Te Verde y Limon", "av": false}, {"t": "Coco-Lima", "av": false}, {"t": "Pera y Flores Blancas", "av": false}, {"t": "Manzana-Canela", "av": false}, {"t": "Surtido (Aromas disponibles)", "av": false}]}, {"id": 1042666, "n": "ROSARIO SANTORAL DE ROSAS EN CAJA ESSENZE", "pr": 3700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193eaa18cb3.webp", "v": [{"t": "Difunta Correa", "av": true}, {"t": "Virgen del Cerro", "av": true}, {"t": "San Cayetano", "av": false}, {"t": "San Jorge", "av": false}, {"t": "San Expedito", "av": false}, {"t": "Virgen del Lujan", "av": false}, {"t": "Gauchito Gil", "av": false}, {"t": "Lourdes con Bernardita", "av": false}, {"t": "Virgen de Itati", "av": false}, {"t": "Virgen del Rosario", "av": false}]}, {"id": 1042585, "n": "Esencia Concentrada Para Humidificador ESSENZE 60 ml", "pr": 5200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19408c23d09.jpeg", "v": [{"t": "Fresh", "av": true}, {"t": "Limon", "av": true}, {"t": "Durazno", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Rosa", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Aqua", "av": true}, {"t": "Eucalipto", "av": true}, {"t": "Uva", "av": true}, {"t": "Frutos Rojos", "av": true}, {"t": "Sandalo Naranja", "av": true}]}, {"id": 1042551, "n": "Difusor varillas Essenze x 130 ml", "pr": 5500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193ea62551b.webp", "v": [{"t": "Durazno Blanco", "av": false}, {"t": "Kid", "av": false}, {"t": "Mandarina", "av": false}, {"t": "Cony", "av": false}, {"t": "Manzana-Canela", "av": false}, {"t": "Aqua", "av": false}, {"t": "Aromas de la India", "av": false}, {"t": "Bergamota Menta", "av": false}, {"t": "Caricia", "av": false}, {"t": "Champa", "av": false}, {"t": "Coco - Lima", "av": false}, {"t": "Fresh", "av": false}, {"t": "Frutilla", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Jazmin", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Lavanda - Manzanilla", "av": false}, {"t": "Limon", "av": false}, {"t": "Naranja Pimienta Negra", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Rosa", "av": false}, {"t": "Sandalo - Naranja", "av": false}, {"t": "Sandalo Hindu", "av": false}, {"t": "Te Verde y Limon", "av": false}, {"t": "Uva", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Gardenia-Vainilla", "av": false}, {"t": "Maracuya", "av": false}, {"t": "Papaya-Durazno", "av": false}, {"t": "Magnolia", "av": false}, {"t": "coco-Vainilla", "av": false}]}, {"id": 1042538, "n": "Difusor Aromatizante para Auto Essenze x10 ml", "pr": 5200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193ea55d9d1.webp", "v": [{"t": "Coco – Vainill", "av": true}, {"t": "Limón", "av": true}, {"t": "Rosa Hindu", "av": true}, {"t": "Acua", "av": false}, {"t": "Durazno Blanco", "av": false}, {"t": "Sandalo – Naranja", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Fresh", "av": false}, {"t": "Mandarina", "av": false}, {"t": "Brisa del mar", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Guayaba", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Mago maracuya", "av": false}, {"t": "Pera", "av": false}, {"t": "Manzana Canela", "av": false}, {"t": "Coco Lima", "av": false}, {"t": "Magmolia", "av": false}]}, {"id": 1042464, "n": "Difusor Essenze x 300 ml Premium", "pr": 9500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193ea367eba.webp", "v": [{"t": "Canela Vainilla Sandalo", "av": false}, {"t": "Calendula Magnolia", "av": false}, {"t": "Frutos Rojos Ylang Ylang", "av": false}, {"t": "Lavanda Manzanilla Menta", "av": false}, {"t": "Naranja Patchouly Pimienta Roja", "av": false}, {"t": "Olibano Rosa Tilo", "av": false}, {"t": "Orquidia Negra", "av": false}, {"t": "Palo Santo Mandarina", "av": false}, {"t": "Papaya Durazno Limon", "av": false}, {"t": "Salvia Jazmin Peonia", "av": false}, {"t": "Te Oriental Champa", "av": false}, {"t": "Coco Lima y Jengibre", "av": false}]}, {"id": 958430, "n": "Aromatizante Textil MASALA 500ml", "pr": 6900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1932af9c912.webp", "v": [{"t": "FRUTOS ROJOS", "av": true}, {"t": "LAVANDA", "av": true}, {"t": "LIMÓN", "av": true}, {"t": "SÁNDALO HINDÚ", "av": true}, {"t": "VAINILLA", "av": true}, {"t": "COCO-VAINILLA", "av": true}, {"t": "PISTACHO", "av": true}, {"t": "FRESH", "av": false}, {"t": "NARANJA-PIMIENTA", "av": false}]}, {"id": 928060, "n": "Difusor Varilla Essenze x 130 ml Premium", "pr": 7600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_192f7b7f562.webp", "v": [{"t": "Naranja-Patchuli-Pimienta Roja", "av": true}, {"t": "Orquídea Negra", "av": true}, {"t": "Salvia-Jazmin-Peonia", "av": true}, {"t": "Palo Santo-Mandarina", "av": true}, {"t": "Te Oriental-Champa", "av": true}, {"t": "Olibano Rosa-Tilo", "av": true}, {"t": "Caléndula-Magnolia", "av": true}, {"t": "Canela-Vainilla-Sandalo", "av": true}, {"t": "Coco-Lima-Jengibre", "av": true}, {"t": "Frutos Rojos-Lang Ylang", "av": true}, {"t": "Lavanda-Manzanilla-Menta", "av": true}, {"t": "Jazmin-Peonia", "av": false}, {"t": "Papaya-durazno-limon", "av": false}]}, {"id": 236037, "n": "Aceite Aromatiz. P/Hornito Real ESSENZE", "pr": 1800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a2d6cb34b.png", "v": [{"t": "Limon", "av": true}, {"t": "31 Hierbas", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Maracuya", "av": true}, {"t": "Frutos Rojos", "av": true}, {"t": "Frutal", "av": true}, {"t": "Lavanda-Manzanilla", "av": true}, {"t": "Manzana-Canela", "av": true}, {"t": "Incienso", "av": true}, {"t": "Floral", "av": true}, {"t": "Fresia", "av": true}, {"t": "Azahar", "av": true}, {"t": "Champa", "av": true}, {"t": "Durazno", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Mirra", "av": true}, {"t": "Yagra", "av": true}, {"t": "Ylang Ylang", "av": true}, {"t": "Arandanos", "av": true}, {"t": "Ambar", "av": true}, {"t": "Almizcle", "av": true}, {"t": "Alcanfor", "av": true}, {"t": "Almendra", "av": true}, {"t": "Canela", "av": true}, {"t": "Citronella", "av": true}, {"t": "Coco", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Ganesha", "av": true}, {"t": "Magnolia", "av": true}, {"t": "Manzanilla", "av": true}, {"t": "Menta", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Papaya", "av": true}, {"t": "Patchouly", "av": true}, {"t": "Pomelo", "av": true}, {"t": "Reina", "av": true}, {"t": "Rosa", "av": true}, {"t": "Ruda", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Tilo", "av": true}, {"t": "Uva", "av": true}, {"t": "Benjui", "av": true}, {"t": "Coco-Lima", "av": true}, {"t": "Coco-Vainilla", "av": true}, {"t": "Naranja", "av": true}, {"t": "Romero", "av": true}, {"t": "Te Verde", "av": true}, {"t": "Vainilla-Canela", "av": true}, {"t": "Naranja-Pimienta", "av": true}, {"t": "Sandalo-Naranja", "av": true}, {"t": "Eucaliptus", "av": false}, {"t": "Vence todo", "av": false}, {"t": "Relax", "av": false}, {"t": "Amor", "av": false}, {"t": "Contra Envidia", "av": false}, {"t": "Om", "av": false}, {"t": "Manzana", "av": false}, {"t": "Abre todos los caminos", "av": false}, {"t": "7 Arcangeles", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Atrae Clientes", "av": false}, {"t": "Atrae Dinero", "av": false}, {"t": "Atrapa Sueños", "av": false}, {"t": "Cherry", "av": false}, {"t": "Limpia Casa", "av": false}, {"t": "Meditacion", "av": false}, {"t": "Miel", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Violeta", "av": false}, {"t": "Energia limpia", "av": false}]}]}, {"cat": "Nuna Terra", "slug": "sahumeriosnunaterra", "count": 4, "products": [{"id": 1326657, "n": "Nuna Terra - SAMSA", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ecdsum8svrbd1.png", "v": [{"t": "Eter", "av": true}, {"t": "Tierra", "av": true}, {"t": "Agua", "av": true}, {"t": "Aire", "av": true}, {"t": "Fuego", "av": true}]}, {"id": 683110, "n": "Nuna Terra – Línea Encanto", "pr": 2400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ecdsjm8svygvm.webp", "v": [{"t": "Hadas Magia Perfumada", "av": false}, {"t": "Duendes Sendero de Orquídeas", "av": false}, {"t": "Duendes Bosque Místico", "av": false}, {"t": "Duendes Posión Floral", "av": false}, {"t": "Hadas Hechizo del Oriente", "av": false}, {"t": "Hada Dulzura Cautivante", "av": false}]}, {"id": 525447, "n": "Nuna Terra – Línea Esotericos", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18f966deb32.jpeg", "v": [{"t": "Om", "av": true}, {"t": "7 Chakras", "av": false}, {"t": "Abre Caminos", "av": false}, {"t": "Armoniza Hogar", "av": false}, {"t": "Atrae Clientes", "av": false}, {"t": "Atrae Dinero", "av": false}]}, {"id": 1178818, "n": "Difusor Masala 60ml", "pr": 3600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_194cc24e30a.webp", "v": [{"t": "VAINILLA", "av": true}, {"t": "FRUTOS ROJOS", "av": true}, {"t": "LAVANDA", "av": true}, {"t": "SÁNDALO HINDÚ", "av": true}, {"t": "COCO-VAINILLA", "av": true}, {"t": "NARANJA-PIMIENTA", "av": true}, {"t": "FRESH", "av": true}, {"t": "LIMON", "av": true}]}]}, {"cat": "Deco hogar", "slug": "decohogar", "count": 21, "products": [{"id": 3796599, "n": "Colgante Atrapa Sueños Essenze MEDIANO", "pr": 6100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2743vmql1qbe7.webp"}, {"id": 3696100, "n": "Bandeja Arcoiris Deco (TEM)", "pr": 6000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku234thmprb9j3u.jpeg"}, {"id": 3086209, "n": "Atrapasueños Madera", "pr": 4500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jh94mlch5e00.webp"}, {"id": 3086191, "n": "Atrapasueños Chakras Mini", "pr": 8400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jh94mlch03oq.webp"}, {"id": 3049659, "n": "Esfera Rotante 6cm", "pr": 9800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iavkml2d1afk.webp"}, {"id": 3049582, "n": "Lampara Esfera de Cristal Grande", "pr": 16700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iavlml2c3zvw.jpeg", "v": [{"t": "Cisnes", "av": true}, {"t": "Torre Eiffel", "av": false}, {"t": "Delfines", "av": false}]}, {"id": 3049574, "n": "Lampara Luna", "pr": 13200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iaw8ml2bx1lf.webp"}, {"id": 2482410, "n": "EXHIBIDOR DE PENDULOS REDONDO MDF DECO", "pr": 31500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjs9mgi3m5yw.webp"}, {"id": 2482086, "n": "COLGANTE TIRA 7 CHAKRAS MDF CRUDO", "pr": 5900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjrmmgi1ij1q.webp"}, {"id": 2477957, "n": "COLGANTE ARMONIZADOR MARIPOSA CHICA 70CM", "pr": 6600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjrlmggqxufu.webp"}, {"id": 2477522, "n": "HUMIDIFICADOR H20 Luz", "pr": 15000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117r3mgvfzio5.png"}, {"id": 2320193, "n": "Reloj de Pared 33cm", "pr": 11400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkurk43mfgzjwfu.webp", "v": [{"t": "Old School", "av": true}, {"t": "Numeros Romanos", "av": true}, {"t": "Champagne", "av": true}, {"t": "Coca-Cola", "av": true}]}, {"id": 2136044, "n": "Lampara Esfera de Cristal", "pr": 7000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku6by6me7s169w.webp", "v": [{"t": "Sistema Solar", "av": false}, {"t": "Unicornio", "av": false}, {"t": "Osito", "av": false}, {"t": "Saturno", "av": false}, {"t": "Luna", "av": false}, {"t": "Diente de Leon", "av": false}, {"t": "Pareja", "av": false}, {"t": "Frozen", "av": false}, {"t": "Cisnes", "av": false}, {"t": "Muñecos de Nieve", "av": false}, {"t": "Campanas", "av": false}, {"t": "Torre Eiffel", "av": false}, {"t": "Basquet", "av": false}, {"t": "Futbol", "av": false}, {"t": "Trebol", "av": false}, {"t": "Delfines", "av": false}, {"t": "Torre de Pisa", "av": false}]}, {"id": 1891048, "n": "Tira Hindu 95cm aprox", "pr": 7000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfh36mcdhx10e.webp"}, {"id": 1891034, "n": "Tapiz Estampado Grande 1x1,4 m.", "pr": 16500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfgz1mcdhqsdz.webp"}, {"id": 1537887, "n": "Colgante Pared GANESHA 3D MDF Crudo", "pr": 23500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_4rhs7gxjmabr1cmg.webp"}, {"id": 1537871, "n": "Colgante Pared Cara Buda MDF Crudo", "pr": 23700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_4rhs7h2gmabqvoss.webp"}, {"id": 1385769, "n": "Llamador de Angel Ojo Turco 32cm", "pr": 6800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ec5txm94btzuu.webp", "v": [{"t": "Elefante", "av": true}, {"t": "Hamsa (Mano de Fatima)", "av": true}]}, {"id": 1339814, "n": "Velador Madera Calada DHYANA", "pr": 53400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ece9km8ri81rj.webp"}, {"id": 1240209, "n": "COLGANTE PARED 7 CHAKRAS MDF", "pr": 4600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_4rhs7gxpmabqq5ru.webp"}, {"id": 1042414, "n": "COLGANTE OJO TURCO MEDIANO", "pr": 11200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193ea1798b8.jpeg"}]}, {"cat": "Conos y fuentes de humo", "slug": "conosparacascadadehumo", "count": 14, "products": [{"id": 3728182, "n": "Super Conos Yagra Natural Fortuna x25u", "pr": 20900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku24rubmq13lbcz.png"}, {"id": 2803355, "n": "Conos Cascada Mil Templos x100", "pr": 7600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tffmiugzyee.webp"}, {"id": 2453897, "n": "Darshan Cono Cascada", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuxjbjmg9k5x4d.webp", "v": [{"t": "Atrae Dinero", "av": true}, {"t": "7 Chakras", "av": true}, {"t": "7 Poderes", "av": true}, {"t": "Sandalo", "av": true}, {"t": "7 Arcangeles", "av": true}, {"t": "Om", "av": true}, {"t": "Sangre de Dragon", "av": true}, {"t": "Manzana-Canela", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Rosa Roja", "av": true}, {"t": "Agua Fresca", "av": true}, {"t": "Salvia Blanca", "av": true}, {"t": "Meditacion", "av": true}, {"t": "Mirra", "av": true}, {"t": "Coco", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Yoga", "av": true}, {"t": "Canela", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Atrae Clientes", "av": false}, {"t": "Bharath Darshan", "av": false}]}, {"id": 2453244, "n": "Conos Cas. Metalizados Mil Templos x100", "pr": 7600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkux8dcmg9fw371.webp"}, {"id": 2017398, "n": "Cascada de Humo DECORADA CHICA", "pr": 12800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo12mdellqrq.webp"}, {"id": 1326837, "n": "Cascada / Fuente de Humo CAMINITO", "pr": 7200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ecnltm8om2ym6.webp"}, {"id": 1240214, "n": "Fuente Cascada de Humo Chica", "pr": 3900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1ya8bmoofyp6t.jpeg"}, {"id": 1170781, "n": "Conos para cascada MANTRA x 10.", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_194b91e27f7.webp"}, {"id": 1134186, "n": "Conos Cascada Aromanza x10 uds", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1946a21d92d.webp", "v": [{"t": "Naranja Pimienta", "av": false}, {"t": "Sándalo Hindú", "av": false}, {"t": "Energía Limpia", "av": false}, {"t": "Frutos Rojos", "av": false}, {"t": "Super Palo Santo", "av": false}, {"t": "Atrae Dinero", "av": false}, {"t": "Berry Kiss", "av": false}, {"t": "Esencias de la Inida", "av": false}, {"t": "Vainillas Encantadas", "av": false}, {"t": "Lavandas del Valle", "av": false}, {"t": "Coconut", "av": false}, {"t": "Rosa Real", "av": false}]}, {"id": 1110874, "n": "CASCADA / FUENTE DE HUMO MEDIANA VS MODELOS_ Escaleras", "pr": 5800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku20lmnmp6wj4zw.jpeg", "v": [{"t": "Ganesha", "av": true}, {"t": "Buda con Porta Vela", "av": true}, {"t": "Cascada", "av": false}, {"t": "Buda Resando", "av": false}]}, {"id": 630658, "n": "Fuente cascada de humo MDF DECO COLOR MEDIANA 13CM", "pr": 8000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_192810d7ff2.webp"}, {"id": 630646, "n": "Fuente cascada de humo MDF GLITTER MEDIANA 13CM", "pr": 6200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190f4c62a90.webp"}, {"id": 630630, "n": "Fuente cascada de humo MDF GLITTER MINI 10CM", "pr": 6000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190f4c2006a.webp"}, {"id": 278385, "n": "CONOS CASCADA X 10 UN. (bolsita)", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a4b382bc5.jpeg"}]}, {"cat": "Esencias y hornitos", "slug": "esenciasyhornitos", "count": 16, "products": [{"id": 3404343, "n": "Esencia Solida Aromanza", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1tzh8mnrjk9fb.webp", "v": [{"t": "Diamante Negro", "av": true}, {"t": "Premium Lemon", "av": true}, {"t": "Nectar de los Dioses", "av": true}, {"t": "Lavanda del Valle", "av": true}, {"t": "Dulces Frutillas", "av": true}, {"t": "Berry Kiss", "av": true}, {"t": "Energia Limpia", "av": true}, {"t": "Vainillas Encantadas", "av": true}, {"t": "Sandalo Hindu", "av": true}, {"t": "Gardenias Flores Blancas", "av": true}, {"t": "Ocean Blue", "av": true}, {"t": "Rosa Real", "av": true}, {"t": "Brisa de Hogar", "av": true}, {"t": "Atrae Dinero", "av": true}, {"t": "Caricias de Algodon", "av": true}, {"t": "La Vida es Bella", "av": true}, {"t": "Naranja Pimienta", "av": false}, {"t": "Frutos Rojos", "av": false}]}, {"id": 3376656, "n": "HORNILLO Calado Luna Estrellas 7 CM", "pr": 4200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1sqqnmnn7vy7r.webp"}, {"id": 3241015, "n": "Esencias solidas para hornitos Vela Star x unid.", "pr": 2700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1ou6gmmjts732.png", "v": [{"t": "Mil Flores", "av": true}, {"t": "Uva", "av": true}, {"t": "Limon", "av": true}, {"t": "Rosa", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Violetas", "av": true}, {"t": "Frutilla", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Naranja Pimienta", "av": false}, {"t": "Lavanda", "av": false}]}, {"id": 2523035, "n": "Hornillo Cer. Africano Varios Colores 8x7cm", "pr": 4400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzfnmmgtf1z8s.webp"}, {"id": 2192469, "n": "Esencias Hornillos Concentrada (Arom)", "pr": 2200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkulqf6mem0rlmt.webp", "v": [{"t": "Aqua Per L Uomo (Masculinidad)", "av": true}, {"t": "Berry Kiss (Dulzura de Hogar)", "av": true}, {"t": "Vainillas Encantadas (Abundancia)", "av": true}, {"t": "Coco Vainilla (Dicha y Satisfaccion)", "av": true}, {"t": "Naranja Pimienta (Atraccion)", "av": true}, {"t": "Premium Lemon (Abre Caminos)", "av": true}, {"t": "Real Champa (Espiritualidad)", "av": true}, {"t": "Taj Mahal (Honrar)", "av": true}, {"t": "Candy Grape (Felicidad)", "av": true}, {"t": "Titanium (Fortaleza)", "av": true}, {"t": "Ocean Blue (Plenitud)", "av": true}, {"t": "Gardenias Flores Blancas (Bienestar)", "av": true}, {"t": "Namaste (Agradecimiento)", "av": true}, {"t": "Elixir del Amor (Enamoramiento)", "av": true}, {"t": "Secretos del Himalaya (Altruismo)", "av": true}, {"t": "Lavandas del Valle (Anti Stress)", "av": true}, {"t": "Flor Oriental (Pureza)", "av": true}, {"t": "Mystic Garden (Renacer)", "av": true}, {"t": "Flowers Kenzo (Feminidad)", "av": true}, {"t": "Esencias de la India (Humildad)", "av": true}, {"t": "Ebano Marfil (Equilibrio)", "av": true}, {"t": "Nectar de los Dioses (Conexion Divina)", "av": true}, {"t": "Armonia Zen (Tranquilidad)", "av": true}, {"t": "Diamante Negro (Aqui y Ahora)", "av": true}, {"t": "Orquidea Salvaje (Deseo)", "av": true}, {"t": "Cereza Patchouli (Superacion)", "av": true}, {"t": "Frescura del Bosque (Liberacion)", "av": true}, {"t": "Limon y Naranja (Positividad)", "av": true}, {"t": "Pasion Rosa (Fascinacion)", "av": true}, {"t": "La Vida es Bella (Optimismo)", "av": false}, {"t": "Frutos Rojos (Empoderamiento)", "av": false}, {"t": "Hawaiian (Inspiracion)", "av": false}]}, {"id": 2112635, "n": "Rocio Aurico 60ml", "pr": 2900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku5gs4me1j53z8.webp", "v": [{"t": "Conexion Astral", "av": true}, {"t": "Momento Presente", "av": true}, {"t": "Regenerador de Aura", "av": true}, {"t": "Atraccion", "av": false}, {"t": "Prosperidad", "av": false}, {"t": "Armonizador de Chakras", "av": false}, {"t": "Energia Angelical", "av": false}, {"t": "Proteccion Energetica", "av": false}]}, {"id": 2020490, "n": "Hornillo Electrico MDF Vitro Fusion", "pr": 21500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo12mdf5lj5i.webp"}, {"id": 1891157, "n": "Hornillo Oxido Deco", "pr": 7400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfh15mcdjatwf.webp"}, {"id": 1891151, "n": "Hornillo Arbol Rust. con Lechuza", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfgy7mcdj4lp8.webp"}, {"id": 1862528, "n": "Hornillo Eléctrico MDF Capillas 20cm", "pr": 21600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2s2mitmc6cxi56.webp"}, {"id": 1109887, "n": "HORNILLO MINI PINTADO 7.5CM", "pr": 3600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19446a87c48.webp"}, {"id": 991763, "n": "Hornillo Tetera", "pr": 8500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1936e5a56bd.webp"}, {"id": 950175, "n": "Esencia aceite para hornito ILUMINARTE 10ML", "pr": 1700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1931b42eed6.webp", "v": [{"t": "PALO SANTO", "av": true}, {"t": "CANELA", "av": true}, {"t": "VIOLETA", "av": true}, {"t": "COCO", "av": true}, {"t": "SWEET CANDY", "av": true}, {"t": "EUCALIPTO", "av": true}, {"t": "NARANJA PIMIENTA", "av": true}, {"t": "Reina de la noche", "av": true}, {"t": "7 poderes", "av": true}, {"t": "ROMERO", "av": true}, {"t": "RUDA", "av": true}, {"t": "TERNURAS BABY", "av": true}, {"t": "PIMPOLLOS JAZMIN", "av": true}, {"t": "REAL CHAMPA", "av": true}, {"t": "MENTA", "av": true}, {"t": "UVA DULCE", "av": true}, {"t": "FRUTILLA", "av": true}, {"t": "VAINILLA", "av": true}, {"t": "CITRONELA", "av": true}, {"t": "MARACUYA", "av": true}, {"t": "PATCHULI", "av": true}, {"t": "ROSA BULGARA", "av": true}, {"t": "Yagra", "av": true}, {"t": "Bergamota", "av": true}, {"t": "Nardo", "av": true}, {"t": "Exquisito Ratnamala", "av": true}, {"t": "Opium", "av": true}, {"t": "Choco Dubai", "av": true}, {"t": "SANDALO HINDÚ", "av": false}, {"t": "ENERGIA LIMPIA", "av": false}, {"t": "LIMON", "av": false}, {"t": "INCIENSO", "av": false}, {"t": "DULCE MIEL", "av": false}, {"t": "BENJUÍ", "av": false}, {"t": "ALMIZCLE", "av": false}, {"t": "MIRRA CONSAGRADA", "av": false}, {"t": "MAGNOLIAS", "av": false}, {"t": "MEDITACION", "av": false}, {"t": "AMBAR", "av": false}, {"t": "BERRY KISS", "av": false}, {"t": "MADERA ORIENTAL", "av": false}, {"t": "NOCHES ENSUEÑO", "av": false}, {"t": "LAVANDA FRANCESA", "av": false}, {"t": "7 CHAKRAS", "av": false}, {"t": "FRUTOS ROJOS", "av": false}, {"t": "SPA RELAX", "av": false}, {"t": "FRESIAS", "av": false}, {"t": "AZAHAR", "av": false}, {"t": "ALMENDRA", "av": false}, {"t": "GARDENIA Y FLORES BLANCAS", "av": false}, {"t": "MANGO", "av": false}, {"t": "Caricias de algodon", "av": false}]}, {"id": 584579, "n": "HORNILLO GRANDE CRUDO SURTIDOS 12.5C", "pr": 5600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1906e806680.webp"}, {"id": 346411, "n": "HORNILLO CALADO 7 CM", "pr": 4200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19054cfca74.jpeg"}, {"id": 236037, "n": "Aceite Aromatiz. P/Hornito Real ESSENZE", "pr": 1800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a2d6cb34b.png", "v": [{"t": "Limon", "av": true}, {"t": "31 Hierbas", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Maracuya", "av": true}, {"t": "Frutos Rojos", "av": true}, {"t": "Frutal", "av": true}, {"t": "Lavanda-Manzanilla", "av": true}, {"t": "Manzana-Canela", "av": true}, {"t": "Incienso", "av": true}, {"t": "Floral", "av": true}, {"t": "Fresia", "av": true}, {"t": "Azahar", "av": true}, {"t": "Champa", "av": true}, {"t": "Durazno", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Mirra", "av": true}, {"t": "Yagra", "av": true}, {"t": "Ylang Ylang", "av": true}, {"t": "Arandanos", "av": true}, {"t": "Ambar", "av": true}, {"t": "Almizcle", "av": true}, {"t": "Alcanfor", "av": true}, {"t": "Almendra", "av": true}, {"t": "Canela", "av": true}, {"t": "Citronella", "av": true}, {"t": "Coco", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Ganesha", "av": true}, {"t": "Magnolia", "av": true}, {"t": "Manzanilla", "av": true}, {"t": "Menta", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Papaya", "av": true}, {"t": "Patchouly", "av": true}, {"t": "Pomelo", "av": true}, {"t": "Reina", "av": true}, {"t": "Rosa", "av": true}, {"t": "Ruda", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Tilo", "av": true}, {"t": "Uva", "av": true}, {"t": "Benjui", "av": true}, {"t": "Coco-Lima", "av": true}, {"t": "Coco-Vainilla", "av": true}, {"t": "Naranja", "av": true}, {"t": "Romero", "av": true}, {"t": "Te Verde", "av": true}, {"t": "Vainilla-Canela", "av": true}, {"t": "Naranja-Pimienta", "av": true}, {"t": "Sandalo-Naranja", "av": true}, {"t": "Eucaliptus", "av": false}, {"t": "Vence todo", "av": false}, {"t": "Relax", "av": false}, {"t": "Amor", "av": false}, {"t": "Contra Envidia", "av": false}, {"t": "Om", "av": false}, {"t": "Manzana", "av": false}, {"t": "Abre todos los caminos", "av": false}, {"t": "7 Arcangeles", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Atrae Clientes", "av": false}, {"t": "Atrae Dinero", "av": false}, {"t": "Atrapa Sueños", "av": false}, {"t": "Cherry", "av": false}, {"t": "Limpia Casa", "av": false}, {"t": "Meditacion", "av": false}, {"t": "Miel", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Violeta", "av": false}, {"t": "Energia limpia", "av": false}]}]}, {"cat": "Lamparas de sal", "slug": "lamparasdesal", "count": 19, "products": [{"id": 3399905, "n": "Lampara de Sal RUSTICA EN PIEDRA", "pr": 28100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1tzhgmnq8ic81.jpeg"}, {"id": 3049574, "n": "Lampara Luna", "pr": 13200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iaw8ml2bx1lf.webp"}, {"id": 3049549, "n": "Lampara de Sal Deco", "pr": 28100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iawwml2bi94h.png", "v": [{"t": "Verde", "av": false}, {"t": "Blanco", "av": false}, {"t": "Azul", "av": false}, {"t": "Rosa", "av": false}]}, {"id": 2136076, "n": "Lamp. de Sal Elefante Mini blanco", "pr": 18700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku6bwume7saw7h.webp"}, {"id": 2135788, "n": "Lamp. Sal Patito Lindo", "pr": 19500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku6bwime8mswbu.webp"}, {"id": 2135780, "n": "Lamp. Sal Zapallo Misterioso", "pr": 15600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku6bxhme8mepor.jpeg"}, {"id": 2135569, "n": "Lamp. Sal CALABAZA RELLENA", "pr": 15600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku6mmcme8mmd1g.png"}, {"id": 1862570, "n": "Lampara Cuadrada de Mesa (no lleva sal)", "pr": 11200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2s2mhdmc6d59n7.webp"}, {"id": 1049466, "n": "Lampara de Sal Late Late Corazon", "pr": 17800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1940e183908.jpeg"}, {"id": 804430, "n": "KIT CABLE PARA ARMAR LAMPARA DE SAL (INCLUYE FOQUITO)", "pr": 6500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_192246bc199.webp"}, {"id": 804357, "n": "Foco para lampara de sal 15w", "pr": 2600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1922468fabe.jpeg"}, {"id": 752033, "n": "SAL DEL HIMALAYA PARTIDA X 1 KG", "pr": 10000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_191c3e021bf.jpeg"}, {"id": 751222, "n": "Lampara de Sal RUSTICA EN PIEDRA", "pr": 33200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_191c2df5b6c.png"}, {"id": 294389, "n": "Lampara de Sal CUADRADO DE LUZ", "pr": 18000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18abcb27b0f.png"}, {"id": 294387, "n": "Lampara de Sal ELEFANTITO", "pr": 17800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18abc9ce9a3.jpeg"}, {"id": 228471, "n": "Lampara de Sal GATITO", "pr": 22700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a08bbf5b5.jpeg"}, {"id": 228469, "n": "Lampara de Sal LECHUZA FORTUNA", "pr": 29200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a08b8c53f.jpeg"}, {"id": 228439, "n": "Lampara de Sal GOTA CON FLOR", "pr": 22700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a0899e216.jpeg"}, {"id": 228413, "n": "Lampara de Sal BUHO MARGARITA", "pr": 20600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkunm2omevxv2n4.png"}]}, {"cat": "Porta Sahumerios", "slug": "portasahumerios1", "count": 16, "products": [{"id": 3696180, "n": "Porta Sahume. Flor Grande Base Arg. (TEM)", "pr": 5000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku234u9mprbshsp.jpeg"}, {"id": 3696172, "n": "Porta Sahume. Mano de Fatima Arg. (TEM)", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku234thmprbqw5q.jpeg"}, {"id": 3086186, "n": "Porta Sahumerio Grande", "pr": 5900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jh8hmlcgvp16.webp"}, {"id": 3086157, "n": "PortaSahumerio Sky Madera 7 Chakras", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1jh9omlcgk1pl.webp"}, {"id": 2811513, "n": "Porta Sahume. Madera Art.", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tg5miynwzgt.jpeg"}, {"id": 2713031, "n": "Porta Sahumerio Artesanal c/Bandeja", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17a22mi64fo3w.jpeg"}, {"id": 2020930, "n": "Porta Sahumerio METAL Circular", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo22mdf64lri.webp", "v": [{"t": "Surtido", "av": true}]}, {"id": 1949908, "n": "Porta Sahumerio Torre Hindu", "pr": 17300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_334op9vg5bmcupxvi9.webp"}, {"id": 1442795, "n": "Porta Sahume. Sky Plast. Nac.", "pr": 1700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo1amdeopzfc.webp", "v": [{"t": "Amarillo", "av": true}, {"t": "Gris", "av": false}, {"t": "Negro", "av": false}, {"t": "Salmón", "av": false}]}, {"id": 1270358, "n": "Porta Sky Nacional Madera", "pr": 1100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_334op9vg34mcupqwn1.jpeg"}, {"id": 1240192, "n": "PORTA SAHUMERIO METAL (ESSENZE)", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7dqrm7yu50k7.webp", "v": [{"t": "Mariposa", "av": true}, {"t": "Buho", "av": false}, {"t": "Elefante", "av": false}]}, {"id": 1229131, "n": "Porta Sahumerio 7 Chakras", "pr": 2900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax79y8m7geajs8.webp"}, {"id": 1043951, "n": "Porta Sahumerio Redondo MEDIANO", "pr": 1600, "img": null}, {"id": 958597, "n": "Porta Sahumerio Bahul de Madera XL", "pr": 14600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_334op9vg3bmcuq2rl1.webp"}, {"id": 804116, "n": "QUEMADOR DE PALO SANTO", "pr": 2700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1sqqnmnhljqm7.png"}, {"id": 536092, "n": "PORTA Sahume. WOOD (SM)", "pr": 8100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18fbc751bce.jpeg"}]}, {"cat": "Sahumerios Nacionales", "slug": "sahumerios", "count": 7, "products": [{"id": 2851663, "n": "Sahumerio Pura Raiz Yagra", "pr": 4400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1byppmjcyw74q.webp", "v": [{"t": "Yagra Rosa", "av": true}, {"t": "Yagra Palo Santo", "av": true}, {"t": "Yagra Miel", "av": true}, {"t": "Yagra Vainilla Negra", "av": true}, {"t": "Yagra Lavanda de los Andes", "av": true}, {"t": "Yagra Cipres", "av": true}]}, {"id": 1326657, "n": "Nuna Terra - SAMSA", "pr": 2500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ecdsum8svrbd1.png", "v": [{"t": "Eter", "av": true}, {"t": "Tierra", "av": true}, {"t": "Agua", "av": true}, {"t": "Aire", "av": true}, {"t": "Fuego", "av": true}]}, {"id": 727015, "n": "PALO SANTO (polvo) x100g", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19193d2901d.jpeg"}, {"id": 683110, "n": "Nuna Terra – Línea Encanto", "pr": 2400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ecdsjm8svygvm.webp", "v": [{"t": "Hadas Magia Perfumada", "av": false}, {"t": "Duendes Sendero de Orquídeas", "av": false}, {"t": "Duendes Bosque Místico", "av": false}, {"t": "Duendes Posión Floral", "av": false}, {"t": "Hadas Hechizo del Oriente", "av": false}, {"t": "Hada Dulzura Cautivante", "av": false}]}, {"id": 525447, "n": "Nuna Terra – Línea Esotericos", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18f966deb32.jpeg", "v": [{"t": "Om", "av": true}, {"t": "7 Chakras", "av": false}, {"t": "Abre Caminos", "av": false}, {"t": "Armoniza Hogar", "av": false}, {"t": "Atrae Clientes", "av": false}, {"t": "Atrae Dinero", "av": false}]}, {"id": 229688, "n": "Sahum. Bangladesh Simple Emp. X 100 Uds", "pr": 5900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a1ac12a63.jpeg", "v": [{"t": "VARIEDAD", "av": true}, {"t": "FRESIA", "av": false}, {"t": "JAZMIN", "av": false}, {"t": "YAGRA", "av": false}, {"t": "CHOCOLATE", "av": false}, {"t": "CANELA", "av": false}, {"t": "DURAZNO", "av": false}, {"t": "MANZANA", "av": false}, {"t": "MIL FLORES", "av": false}, {"t": "NARDO", "av": false}, {"t": "REINA", "av": false}, {"t": "ROSA", "av": false}, {"t": "VAINILLA", "av": false}, {"t": "VIOLETA", "av": false}, {"t": "CHAMPA", "av": false}, {"t": "ATRAE DINERO", "av": false}, {"t": "BERRY KISS", "av": false}, {"t": "ENERGIA LIMPIA", "av": false}, {"t": "BENJUÍ", "av": false}, {"t": "CITRONELLA", "av": false}, {"t": "COCO", "av": false}, {"t": "ESENCIA DE LA INDIA", "av": false}, {"t": "FRAGANCIA ORIENTAL", "av": false}, {"t": "FRUTILLA", "av": false}, {"t": "INCIENSO", "av": false}, {"t": "LAVANDA", "av": false}, {"t": "LIMÓN", "av": false}, {"t": "MANGO", "av": false}, {"t": "MIRRA", "av": false}, {"t": "NARANJA-PIMIENTA", "av": false}, {"t": "PALO SANTO", "av": false}, {"t": "PATCHOULY", "av": false}, {"t": "RUDA", "av": false}, {"t": "SANDALO", "av": false}]}, {"id": 229685, "n": "Sahum. Bangladesh Triple Emp. x 50uds", "pr": 5200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18a1aa6adf3.jpeg", "v": [{"t": "INCIENSO", "av": true}, {"t": "YAGRA", "av": true}, {"t": "ATRAE DINERO", "av": true}, {"t": "BENJUI", "av": true}, {"t": "CANELA MISTICA", "av": true}, {"t": "CHAMPA", "av": true}, {"t": "CITRONELLA", "av": true}, {"t": "COCO", "av": true}, {"t": "ENERGIA LIMPIA", "av": true}, {"t": "JAZMIN", "av": true}, {"t": "LAVANDA", "av": true}, {"t": "LIMON", "av": true}, {"t": "MANZANA", "av": true}, {"t": "MIRRA", "av": true}, {"t": "NARANJA PIMINETA", "av": true}, {"t": "PALO SANTO", "av": true}, {"t": "RUDA", "av": true}, {"t": "SANDALO", "av": true}, {"t": "VAINILLA", "av": true}, {"t": "VARIEDAD", "av": true}, {"t": "VIOLETA", "av": true}, {"t": "FRESIA", "av": false}, {"t": "CHOCOLATE", "av": false}, {"t": "ESPIRITUAL", "av": false}, {"t": "FRUTILLA", "av": false}, {"t": "MIL FLORES", "av": false}, {"t": "NARDO", "av": false}, {"t": "REINA DE LA NOCHE", "av": false}]}]}, {"cat": "Sahumerios Importados", "slug": "importados", "count": 30, "products": [{"id": 2851655, "n": "Sahumero Mantra Equilibrium XL", "pr": 2800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1bx4kmjcys7ro.webp", "v": [{"t": "Lavanda", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Rosa", "av": true}, {"t": "Limon", "av": true}, {"t": "Incienso Mirra", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Sandalo", "av": false}]}, {"id": 2668039, "n": "Sahume. Tribal Soul", "pr": 2700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku15p0ymht58ga8.webp", "v": [{"t": "Palo Santo Pino", "av": true}, {"t": "Salvia Blanca Palo Santo", "av": true}, {"t": "Mirra", "av": true}, {"t": "Salvia Blanca Lavanda", "av": true}, {"t": "Palo Santo", "av": true}]}, {"id": 2668002, "n": "Golden Lotus Bricks x15 unid Salvia Blanca", "pr": 4200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku15ozimht4d45e.webp"}, {"id": 2539698, "n": "Sahume. Satya", "pr": 1500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117qemgz8w9em.webp", "v": [{"t": "Reiki", "av": true}, {"t": "Sandalwood", "av": true}, {"t": "Nag Champa", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Mirra", "av": true}, {"t": "Super Hit", "av": true}, {"t": "Salvia Blanca", "av": true}, {"t": "Positive Vibes", "av": true}, {"t": "Meditacion", "av": true}, {"t": "Karma", "av": false}, {"t": "Sangre de Dragon", "av": false}, {"t": "Vainilla", "av": false}]}, {"id": 2539656, "n": "Sahumerio Namaste XL Heritage", "pr": 6500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117rumgz8hhzp.jpeg", "v": [{"t": "Sandalo-Violeta", "av": true}, {"t": "Sandalo-Canela", "av": true}, {"t": "Sandalo-Nag Champa", "av": true}]}, {"id": 2539559, "n": "Sahumerio Namaste Earth", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117s4mgz7xbek.webp", "v": [{"t": "PS Rosa", "av": true}, {"t": "PS Citronela", "av": true}, {"t": "PS Manzanilla", "av": true}, {"t": "PS Romero", "av": true}, {"t": "PS Laurel", "av": true}, {"t": "PS Lemongrass", "av": true}, {"t": "PS Eucalipto", "av": true}, {"t": "PS Yagra", "av": false}]}, {"id": 2462940, "n": "Sahumerio 7 AROMAS INDIA Iluminarte blister x 12 sobres", "pr": 22200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1xog8mohuz56t.webp"}, {"id": 2462914, "n": "Sahumerio 7 AROMAS INDIA Iluminarte x 1 sobre", "pr": 2100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1pd52mmtnokgj.webp"}, {"id": 2453897, "n": "Darshan Cono Cascada", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuxjbjmg9k5x4d.webp", "v": [{"t": "Atrae Dinero", "av": true}, {"t": "7 Chakras", "av": true}, {"t": "7 Poderes", "av": true}, {"t": "Sandalo", "av": true}, {"t": "7 Arcangeles", "av": true}, {"t": "Om", "av": true}, {"t": "Sangre de Dragon", "av": true}, {"t": "Manzana-Canela", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Rosa Roja", "av": true}, {"t": "Agua Fresca", "av": true}, {"t": "Salvia Blanca", "av": true}, {"t": "Meditacion", "av": true}, {"t": "Mirra", "av": true}, {"t": "Coco", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Yoga", "av": true}, {"t": "Canela", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Atrae Clientes", "av": false}, {"t": "Bharath Darshan", "av": false}]}, {"id": 2453790, "n": "Darshan Dhoop", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuxjctmg9jm7hd.jpeg", "v": [{"t": "Canela", "av": true}, {"t": "Lavanda", "av": true}, {"t": "7 Arcangeles", "av": true}, {"t": "Mirra", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Limpia casa", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Frank", "av": true}, {"t": "Agua fresca", "av": true}, {"t": "7 Poderes", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Meditacion", "av": true}, {"t": "Om", "av": true}, {"t": "Mango", "av": true}, {"t": "Sri Ganesh", "av": false}, {"t": "Chandan", "av": false}]}, {"id": 2297999, "n": "Sahumeerio Hexagonal DARSHAN", "pr": 1600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuqqunmfbmwwox.webp", "v": [{"t": "Meditacion", "av": true}, {"t": "Sri Ganesh", "av": true}, {"t": "Patchouli", "av": true}, {"t": "Limon", "av": true}, {"t": "Canela", "av": true}, {"t": "Frank-Mirra", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Rosa Roja", "av": true}, {"t": "Limpia Casa", "av": true}, {"t": "7 Chakras", "av": true}, {"t": "Om", "av": true}, {"t": "Frank-Incienso", "av": true}, {"t": "Agua Fresca", "av": true}, {"t": "Atrae Dinero", "av": false}, {"t": "Atrae Clientes", "av": false}, {"t": "7 Dias", "av": false}, {"t": "Buena Energia", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Sandal Export", "av": false}, {"t": "Mirra", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Contra Envidia", "av": false}, {"t": "7 Arcangeles", "av": false}]}, {"id": 2297950, "n": "Sahumeerio Hexagonal Darshan XL", "pr": 4100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuqqthmfbmp0n6.webp", "v": [{"t": "Meditacion", "av": true}, {"t": "Rosa Roja", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Vainilla", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Agua Fresca", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Om", "av": false}, {"t": "Frank Mirra", "av": false}]}, {"id": 2101399, "n": "Alaukik Sobre", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku6by6me3k7kwi.png", "v": [{"t": "Sandalo", "av": true}, {"t": "Fantasia", "av": true}, {"t": "Rosa", "av": true}, {"t": "Namaste", "av": true}, {"t": "Om", "av": true}, {"t": "Fusion", "av": true}, {"t": "Lavander", "av": true}, {"t": "Mango", "av": true}, {"t": "Anana", "av": true}, {"t": "Musk Melon", "av": true}, {"t": "Agua Fresca", "av": true}]}, {"id": 1891070, "n": "Sahumerio Alaukik XL Largo", "pr": 7000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfh36mcdi6420.webp", "v": [{"t": "Nirvana", "av": true}, {"t": "Black and Gold", "av": true}, {"t": "Meditacion", "av": true}, {"t": "Melon", "av": true}, {"t": "Mango", "av": true}, {"t": "Sandia", "av": true}, {"t": "Durazno", "av": true}, {"t": "Calendula", "av": true}, {"t": "Namaste", "av": true}, {"t": "Cafe", "av": true}, {"t": "Guayaba", "av": true}, {"t": "Om", "av": true}, {"t": "Piña", "av": true}, {"t": "Lavanda", "av": false}, {"t": "Arbol Dorado", "av": false}, {"t": "Frutilla", "av": false}, {"t": "Aqua Fresh", "av": false}, {"t": "Contra Envidia", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Naranja", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Citronela", "av": false}, {"t": "Lima Fresca", "av": false}]}, {"id": 1890992, "n": "Sahumerio SAC 7 Chakras", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfgy1mcdh8bki.webp"}, {"id": 1639957, "n": "Sahum. Aroma Fusion LARGOS", "pr": 5900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_15dzxfe2mmagsk7m7.jpeg", "v": [{"t": "Coco", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Citronela", "av": false}, {"t": "Frank y Mirra", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Fresa", "av": false}, {"t": "7 Almizcle Africano", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Om", "av": false}, {"t": "Black Ice", "av": false}, {"t": "Meditacion", "av": false}, {"t": "Rosa Roja", "av": false}, {"t": "Limpia Hogar", "av": false}, {"t": "Canela", "av": false}, {"t": "Bendicion de dinero", "av": false}]}, {"id": 1634167, "n": "AROMA FUSION BOX x 75 SURTIDO", "pr": 111300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_15dzxffdlmafjw27c.webp"}, {"id": 1290169, "n": "Sahumerios Pouch Mantra x unid.", "pr": 600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7ixym8ab4m2q.webp", "v": [{"t": "Limon", "av": true}, {"t": "Rosas", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Reina de la Noche", "av": true}, {"t": "Frutilla", "av": false}, {"t": "Incienso", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Mirra", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Champa", "av": false}]}, {"id": 1290159, "n": "Sahumerios Pouch Mantra Box 144 Unid.", "pr": 68200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7j05m8aayfi4.webp"}, {"id": 1229039, "n": "Sahumerio Dhoop aro de incienso MANTRA", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7a1rm7gcw9ny.webp", "v": [{"t": "Jasmine", "av": true}, {"t": "Lavanda", "av": false}, {"t": "Om", "av": false}, {"t": "Incienso", "av": false}, {"t": "Mirra", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Sándalo", "av": false}, {"t": "Champa", "av": false}, {"t": "Mil Flores", "av": false}]}, {"id": 1229021, "n": "Sahumerios Conos Mantra (no cascada)", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7a1km7gchchc.webp", "v": [{"t": "Jasmine", "av": true}, {"t": "Mil Flores", "av": false}, {"t": "Om", "av": false}, {"t": "Sandal", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Champa", "av": false}, {"t": "Inciense", "av": false}, {"t": "Lavander", "av": false}, {"t": "Mirra", "av": false}]}, {"id": 1226293, "n": "Sahumerio Crystal Scent con Piedras", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax79zzm7g6a74n.webp", "v": [{"t": "Turmalina", "av": true}, {"t": "Turquesa", "av": true}, {"t": "Jade Verde", "av": true}, {"t": "Amatista", "av": true}, {"t": "Labradarita", "av": true}, {"t": "Lapiz Lazuli", "av": true}, {"t": "Ojo de tigre", "av": true}, {"t": "Pirita", "av": true}, {"t": "Venturina", "av": true}, {"t": "Lava", "av": true}, {"t": "Onix", "av": true}, {"t": "Selenita", "av": true}, {"t": "Agata", "av": false}, {"t": "Cuarzo Rosa", "av": false}]}, {"id": 1168766, "n": "Sahumerio Hexagonal MANTRA", "pr": 1200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_194b3dda5b2.webp", "v": [{"t": "Incienso", "av": true}, {"t": "Naranja", "av": true}, {"t": "Café", "av": true}, {"t": "Banana", "av": true}, {"t": "Chocolate", "av": true}, {"t": "Dragon", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Mango", "av": true}, {"t": "Papaya", "av": true}, {"t": "Sándalo", "av": true}, {"t": "Sandalwood", "av": false}, {"t": "Palo Santo Romero", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Lemon", "av": false}, {"t": "Sándalo Palo Santo", "av": false}, {"t": "7 Arcángeles", "av": false}, {"t": "7 Chakras", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Benjuí", "av": false}, {"t": "Citronella", "av": false}, {"t": "Coco", "av": false}, {"t": "Copal", "av": false}, {"t": "Copal Palo Santo", "av": false}, {"t": "Incienso Blanco", "av": false}, {"t": "Incienso Palo Santo", "av": false}, {"t": "Lima Fresca", "av": false}, {"t": "Lluvia de Plata", "av": false}, {"t": "Melón", "av": false}, {"t": "Mil Flores", "av": false}, {"t": "Mirra", "av": false}, {"t": "Mirra Incienso", "av": false}, {"t": "Mirra Palo Santo", "av": false}, {"t": "Om", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Palo Santo Lavanda", "av": false}, {"t": "Palo Santo Rosa", "av": false}, {"t": "Palo Santo Vainilla", "av": false}, {"t": "Patchouly", "av": false}, {"t": "Piña", "av": false}, {"t": "Reina", "av": false}, {"t": "Rosa", "av": false}, {"t": "Ruda Romero", "av": false}, {"t": "Sandía", "av": false}, {"t": "Súper Sándalo", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Violeta", "av": false}, {"t": "Yagra", "av": false}, {"t": "Yagra Incienso", "av": false}, {"t": "Yagra Palo Santo", "av": false}, {"t": "Yoga Mantra", "av": false}, {"t": "Jazmin", "av": false}, {"t": "Champa", "av": false}, {"t": "Lluvia de Oro", "av": false}]}, {"id": 1117287, "n": "Alaukik Dhoop RAMA x16", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku15ozhmht5iiiy.webp", "v": [{"t": "Rosa", "av": true}, {"t": "Mango", "av": true}, {"t": "Anana", "av": true}, {"t": "Musk Melon", "av": true}, {"t": "Naranja", "av": true}, {"t": "Lavanda", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Arbol Dorado", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Frutilla", "av": false}, {"t": "Lima Fresca", "av": false}, {"t": "Aqua Fresh", "av": false}, {"t": "Black and Gold", "av": false}, {"t": "Musk", "av": false}, {"t": "Fantasia", "av": false}]}, {"id": 1070882, "n": "SAHUMERIOS BLUNT ACTION X75", "pr": 79900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1943d5f3306.webp"}, {"id": 945494, "n": "SAHUMERIOS ILUMINARTE INDIA LARGOS 40CM (10 VARILLAS)", "pr": 3900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1930e1e20f3.webp", "v": [{"t": "Citronela", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Vainilla", "av": false}, {"t": "Limon", "av": false}, {"t": "Palo Santo", "av": false}, {"t": "Sándalo", "av": false}]}, {"id": 752948, "n": "Sahumerio Alaukik Collection 50 gr. x Unid.", "pr": 3800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_191c714d0e7.png", "v": [{"t": "Black and Gold", "av": true}, {"t": "Mirra", "av": true}, {"t": "Jazmín", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Salvia blanca", "av": true}, {"t": "Sueño en londres", "av": true}, {"t": "Patchouly", "av": true}, {"t": "Palo Santo", "av": true}, {"t": "Incienso", "av": true}, {"t": "Café", "av": true}, {"t": "Rosa", "av": true}, {"t": "Coco", "av": true}, {"t": "Mango", "av": true}, {"t": "Anana", "av": true}, {"t": "Naranja", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Namaste", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Manzana-Canela", "av": true}, {"t": "Melon", "av": true}, {"t": "Agua Fresca", "av": true}, {"t": "Limpia Casa", "av": true}, {"t": "7 Benjui", "av": true}, {"t": "Amazing America", "av": true}, {"t": "Fenix", "av": true}, {"t": "Rosa Dulce", "av": true}, {"t": "Sai Smaran", "av": true}, {"t": "Durazno", "av": true}, {"t": "Chandan", "av": true}, {"t": "Rosa Holandesa", "av": true}, {"t": "Musk", "av": true}, {"t": "Canela", "av": true}, {"t": "Titan", "av": true}, {"t": "Yoga Mantra", "av": true}, {"t": "Sandalo", "av": true}, {"t": "Atrae Dinero", "av": true}, {"t": "Kiwi", "av": true}, {"t": "7 Arcangeles", "av": true}, {"t": "Calendula", "av": true}, {"t": "Atrae Clientes", "av": true}, {"t": "Chocolate", "av": true}, {"t": "Arbol Dorado", "av": true}, {"t": "Om", "av": true}, {"t": "Amanecer", "av": true}, {"t": "Nirvana", "av": true}, {"t": "Litchi", "av": true}, {"t": "Frutos Rojos", "av": false}, {"t": "Champa", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Mandarina", "av": false}, {"t": "Citronela", "av": false}, {"t": "Cereza", "av": false}, {"t": "Contra Envidia", "av": false}, {"t": "San Miguel", "av": false}, {"t": "Orquidea", "av": false}, {"t": "Sandia", "av": false}, {"t": "Alcanfor", "av": false}, {"t": "Abre Caminos", "av": false}, {"t": "Sandalo Canela", "av": false}, {"t": "Anti Estres", "av": false}, {"t": "Miel", "av": false}]}, {"id": 706038, "n": "Sahumerios BLUNT ACTION x unidad", "pr": 1600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1943d61311e.webp", "v": [{"t": "American Dreams", "av": false}, {"t": "Baby powder", "av": false}, {"t": "Black ice type", "av": false}, {"t": "Black sandalwood", "av": false}, {"t": "Coole water type", "av": false}, {"t": "Dragon´s blood", "av": false}, {"t": "French Vainilla", "av": false}, {"t": "Fresh lavander", "av": false}, {"t": "Good fortune", "av": false}, {"t": "Hiphop", "av": false}, {"t": "Luv Kush", "av": false}, {"t": "Meditacion", "av": false}, {"t": "Money Money", "av": false}, {"t": "Nag Champa", "av": false}, {"t": "Peace y love", "av": false}, {"t": "Romantic Rose", "av": false}, {"t": "Taj Mahal", "av": false}, {"t": "Thousand flowers", "av": false}]}, {"id": 583135, "n": "Sahum. AROMA FUSION x unidad", "pr": 1700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1906ded7473.jpeg", "v": [{"t": "Rosa Vainilla", "av": true}, {"t": "Palo Santo", "av": false}, {"t": "Black Ice", "av": false}, {"t": "Cool Water", "av": false}, {"t": "Fresa", "av": false}, {"t": "Limpia Hogar", "av": false}, {"t": "Manzana Canela", "av": false}, {"t": "Sandalo", "av": false}, {"t": "Meditacion", "av": false}, {"t": "Citronela", "av": false}, {"t": "Dibujo de Dinero", "av": false}, {"t": "Lavanda", "av": false}, {"t": "Llama Clientes", "av": false}, {"t": "Om", "av": false}, {"t": "Rosa Roja", "av": false}, {"t": "Lick Me All Over", "av": false}]}, {"id": 452820, "n": "Sahumerio Hexagonal ILUMINARTE India", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18e42455d1a.webp", "v": [{"t": "MIL FLORES", "av": false}, {"t": "MIRRA", "av": false}, {"t": "PALO SANTO", "av": false}, {"t": "PATCHOULY", "av": false}, {"t": "ROSA BULGARA", "av": false}, {"t": "SANDAL WOOD", "av": false}, {"t": "SANDALO", "av": false}, {"t": "SUPER SANDALO", "av": false}, {"t": "VAINILLA", "av": false}, {"t": "VIOLETA", "av": false}, {"t": "CITRONELLA", "av": false}, {"t": "ROMERO", "av": false}, {"t": "ATRAE DINERO", "av": false}, {"t": "MANZANA VERDE", "av": false}, {"t": "LLUVIA DE PLATA", "av": false}, {"t": "LLUVIA DE ORO", "av": false}, {"t": "7 PODERES", "av": false}, {"t": "REINA DE LA NOCHE", "av": false}, {"t": "BENJUI", "av": false}, {"t": "CHAMPA", "av": false}, {"t": "COCONUT", "av": false}, {"t": "FRUTILLA", "av": false}, {"t": "INCIENSO", "av": false}, {"t": "JAZMIN", "av": false}, {"t": "LAVANDA", "av": false}, {"t": "LIMÒN", "av": false}, {"t": "7 CHAKRAS", "av": false}, {"t": "ENERGIA REIKI", "av": false}]}]}, {"cat": "Sahumadores y esferas", "slug": "sahumadoresyesferas", "count": 13, "products": [{"id": 3285290, "n": "Sahumador Ceramica Nº2", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1qdcqmmw7hqe7.webp"}, {"id": 3285267, "n": "Sahumador Ceramica Esmaltado con Tapa", "pr": 7000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1qb7lmmw7c0jv.webp"}, {"id": 2604973, "n": "Esferas Bombay Bolsa x4", "pr": 1100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku13sgvmhdfcr79.webp", "v": [{"t": "Paz y Armonia", "av": true}, {"t": "Felicidad", "av": true}, {"t": "Dulzura", "av": true}, {"t": "Soltar", "av": true}, {"t": "Buena Onda", "av": true}, {"t": "Bienestar", "av": true}, {"t": "Meditacion", "av": true}, {"t": "Pasion", "av": true}, {"t": "Abundancia", "av": false}, {"t": "Limpieza", "av": false}]}, {"id": 2482447, "n": "YAGRA EN BOLSITA 15 GR", "pr": 2100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjqumgi3s4ho.webp"}, {"id": 1890733, "n": "Yagra en Bolsita x 50gs", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfh2zmcde5ofb.webp"}, {"id": 1110762, "n": "SAHUMADOR CORAZON 10X9 CM", "pr": 10300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19447fa5974.jpeg"}, {"id": 1110737, "n": "SAHUMADOR ESMALTADO PINTADO COLORES 13X5CM", "pr": 4200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19447f2ad04.webp"}, {"id": 1043990, "n": "Sahumador OM Corto", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193f137f4cb.webp"}, {"id": 1024804, "n": "Sahumador Esmaltado Hoja", "pr": 11200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193bb616d18.png"}, {"id": 1023377, "n": "Sahumador con Tapa Color", "pr": 8400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_193b677dba5.webp", "v": [{"t": "Rojo", "av": true}, {"t": "Verde", "av": true}, {"t": "Naranja", "av": true}, {"t": "Amarillo", "av": true}, {"t": "Morado", "av": true}, {"t": "Violeta", "av": true}, {"t": "Bordó", "av": true}, {"t": "Turquesa", "av": false}]}, {"id": 632408, "n": "ESFERAS MAGICAS X 4 COLGABLES AROMANZA X 1", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190fee3ebc6.webp", "v": [{"t": "Aroma a Cannabis", "av": false}, {"t": "Citronela", "av": false}, {"t": "4 Elementos", "av": false}, {"t": "7 Poderes", "av": false}, {"t": "Abre Caminos", "av": false}, {"t": "Abundancia", "av": false}, {"t": "Amor", "av": false}, {"t": "Armonía", "av": false}, {"t": "Bienestar", "av": false}, {"t": "Defumación Completa", "av": false}, {"t": "Destrabe", "av": false}, {"t": "Divina Ofrenda", "av": false}, {"t": "Fortuna", "av": false}, {"t": "Limpieza", "av": false}, {"t": "Protección", "av": false}, {"t": "Purificación", "av": false}, {"t": "Super Palo Santo", "av": false}]}, {"id": 354825, "n": "Sahumador Rustico Chico", "pr": 2300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_334op9v8ipmcwrvccg.jpeg"}, {"id": 231172, "n": "Esferas Magicas Organica Caja X 4", "pr": 1400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2078imp2owouj.webp", "v": [{"t": "4 ELEMENTOS", "av": true}, {"t": "ABUNDANCIA", "av": true}, {"t": "DESTRABE", "av": true}, {"t": "LIMPIEZA", "av": true}, {"t": "NARANJA PIMIENTA", "av": true}, {"t": "CITRONELLA", "av": true}, {"t": "ABRE CAMINOS", "av": true}, {"t": "AMOR", "av": true}, {"t": "ARMONIA", "av": true}, {"t": "FORTUNA", "av": true}, {"t": "PURIFICACION", "av": true}, {"t": "7 PODERES", "av": false}, {"t": "BIENESTAR", "av": false}, {"t": "PROTECCION", "av": false}, {"t": "SUPER PALOSANTO", "av": false}, {"t": "DIAMANTE NEGRO", "av": false}, {"t": "FRUTOS ROJOS", "av": false}, {"t": "CANNABIS", "av": false}, {"t": "DEFUMACION", "av": false}, {"t": "DIVINA OFRENDA", "av": false}]}]}, {"cat": "Tarot", "slug": "tarot", "count": 22, "products": [{"id": 3643122, "n": "Tablero Pendulos Varios Modelos", "pr": 5000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku21ibxmpe85wx7.webp"}, {"id": 3285238, "n": "Tarot RDR Black", "pr": 8700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1qdcqmmw765wd.webp"}, {"id": 2851636, "n": "Pendulo Facetado de Piedras", "pr": 24700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1bx2vmjcyq236.webp"}, {"id": 2851627, "n": "Pendulo Egipcion de Bronce con Testigo", "pr": 24700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1bx4kmjcymr0s.webp"}, {"id": 2851609, "n": "Pendulo Redondo de Piedras", "pr": 20500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1bx24mjcyi33z.webp"}, {"id": 2851562, "n": "Pendulo David Bronce", "pr": 13000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1bx24mjcyc0r5.webp"}, {"id": 2809393, "n": "Oraculo de los Dragones", "pr": 7400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17te4mixlpju3.webp"}, {"id": 2809384, "n": "Oraculo del Horoscopo Chino", "pr": 7400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tfemixlhhj1.jpeg"}, {"id": 2809383, "n": "Oraculo de las Hadas", "pr": 7400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1a9demixlb7kr.webp"}, {"id": 2482681, "n": "Sahumerio Oraculo Animales Sagrados Sagrada Madre", "pr": 4000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjrmmgi55r8i.webp"}, {"id": 2217153, "n": "Oraculos Sacerdotiza", "pr": 22000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkun0mgmesq80rg.webp", "v": [{"t": "Vision Divina", "av": true}, {"t": "Yemanja", "av": true}, {"t": "Mensaje de las Diosas", "av": true}, {"t": "Cristales", "av": true}, {"t": "Empoderamiento", "av": false}]}, {"id": 2044792, "n": "PENDULO DE PIEDRAS SEMIPRECIOSAS 3,5CM APROX.", "pr": 8900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2covmdkd9eo2.webp", "v": [{"t": "Obsidiana", "av": false}, {"t": "Cuarzo Cristal", "av": false}]}, {"id": 2044670, "n": "TAROT EGIPCIO ILUMINARTE", "pr": 10600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2cmgmdkbyb7e.webp"}, {"id": 1981231, "n": "Oraculo El Gato Sabe", "pr": 42800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_334op9vasimd34rpgn.webp"}, {"id": 1891034, "n": "Tapiz Estampado Grande 1x1,4 m.", "pr": 16500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfgz1mcdhqsdz.webp"}, {"id": 1326716, "n": "El Oraculo del Tigre", "pr": 42900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1b6ecnk2m8ol06gt.webp"}, {"id": 1292186, "n": "El Oraculo de las Diosas", "pr": 7400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7ixsm8avqjzw.webp"}, {"id": 1292175, "n": "TAROT MARSELLES ILUMINARTE", "pr": 10100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7j0cm8avjbfg.webp"}, {"id": 1134344, "n": "TAROT CIRCULAR ESPAÑOL", "pr": 17700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2u2lax7l4mm8n2gzia.webp"}, {"id": 1134325, "n": "Tarot RDR Premium Iluminarte", "pr": 15100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1946a6c5dfe.webp"}, {"id": 1134272, "n": "PAÑO DE TAROT CON BOLSITA", "pr": 11100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_1946a5eba85.webp"}, {"id": 885774, "n": "TAROT RDR RAIDER - ILUMINARTE", "pr": 10500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_192b1ab8c53.webp"}]}, {"cat": "Velas", "slug": "velas", "count": 15, "products": [{"id": 3796800, "n": "Vela de Noche Blancas x12 VELAS-STAR", "pr": 3300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2743umql2qp77.webp"}, {"id": 3769398, "n": "Vela de Noche Blancas DeLaTia x50", "pr": 11500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku25s90mqcgl967.webp"}, {"id": 3285065, "n": "Veloncito Aroma Vela-Star", "pr": 2300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1qb89mmw6l5rc.webp", "v": [{"t": "Melon", "av": true}, {"t": "Rosa", "av": true}, {"t": "Naranja Pimienta", "av": true}, {"t": "Mil Flores", "av": true}, {"t": "Coco", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Limon", "av": true}, {"t": "Jamin", "av": true}, {"t": "Frutilla", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Neutro", "av": true}]}, {"id": 2604926, "n": "Vela Aromatizada Lata Mandala Grande 6,5cm", "pr": 8000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku140b0mhdf2bbn.webp"}, {"id": 2482145, "n": "Vela de Soja Aromatica Volcan", "pr": 14600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjrmmgi1x0ub.webp"}, {"id": 2020970, "n": "Vela de Soja Lata Mandala Chica", "pr": 6300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuo1amdf6da9p.webp", "v": [{"t": "Surtido", "av": true}]}, {"id": 1862505, "n": "Vela Arom. Soja Mini Caramelera", "pr": 9700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_2s2mkwmc6chfk2.webp"}, {"id": 1539086, "n": "Vela de Soja Cilindrica con Tapa", "pr": 4900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_9czb7agt3macipft8.webp"}, {"id": 1539061, "n": "Vela de Soja Ojo Turco Aromatica", "pr": 5300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_9czb7agpwmacik7kb.webp"}, {"id": 1539029, "n": "Vela de Soja Aromatica con Vaso Contenedor", "pr": 3800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_9czb7agremaci66iu.webp"}, {"id": 1537902, "n": "Vela de Soja Ojo Turco Bicolor", "pr": 5900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_4rhs7h10mabr5g0x.webp"}, {"id": 409508, "n": "VELA DE NOCHE ILUMINARTE AROMATICA X 6 COLGANTE", "pr": 3100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18d902e4561.webp", "v": [{"t": "Pimpollos de jazmín", "av": true}, {"t": "Berry Kiss", "av": true}, {"t": "Citronella", "av": true}, {"t": "Energía Limpia", "av": true}, {"t": "Naranja Pimienta", "av": true}, {"t": "Rosa Bulgara", "av": false}, {"t": "Real Champa", "av": false}, {"t": "Uva", "av": false}, {"t": "Vainillas Encantadas", "av": false}, {"t": "Dulces Frutillas", "av": false}, {"t": "Lavandas del Valle", "av": false}, {"t": "Limones de Sorrento", "av": false}]}, {"id": 409506, "n": "VELA DE NOCHE BLANCA ILUMINARTE X 6 COLGANTE", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18d9026d86d.webp"}, {"id": 325852, "n": "VELA DE NOCHE ILUMINARTE AROMATICA CUBO X 12", "pr": 6600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18bf6ad4435.webp"}, {"id": 229816, "n": "VELA DE NOCHE BLANCA ILUMINARTE X 12", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku13m83mh9sufwn.jpeg"}]}, {"cat": "Insumos", "slug": "insumos", "count": 4, "products": [{"id": 2604957, "n": "Varillas de Rattan Negras 15cm x10 unid", "pr": 1000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku13shhmhdf8y85.webp"}, {"id": 388213, "n": "Bolsa Poliprop. Cristal 6x30 X 100 Uds (Bolsita Sahumerio)", "pr": 2200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_18d428345b6.webp"}, {"id": 2809206, "n": "Pulsera Hamsa con Dije", "pr": 5100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tffmixjp4yr.webp"}, {"id": 583383, "n": "SAHUMERIO MOMENTOS (5 VARILLAS) X 1", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190660af2e6.webp", "v": [{"t": "Felicidad", "av": true}, {"t": "Limpieza", "av": true}, {"t": "Pasión", "av": true}, {"t": "Soltar", "av": true}, {"t": "Abundancia", "av": false}, {"t": "Bienestar", "av": false}, {"t": "Buena Onda", "av": false}, {"t": "Dulzura", "av": false}, {"t": "Meditación", "av": false}, {"t": "Paz y Armonía", "av": false}]}]}, {"cat": "Palo Santo", "slug": "palosanto", "count": 4, "products": [{"id": 727015, "n": "PALO SANTO (polvo) x100g", "pr": 3000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19193d2901d.jpeg"}, {"id": 726998, "n": "PALO SANTO (tronquitos) x 150g", "pr": 5600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku28zhumr1674tq.webp"}, {"id": 2565637, "n": "Humidificador sin filtro TERRA BRUMA", "pr": 49200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku12ykpmh4x71ek.jpeg"}, {"id": 683130, "n": "Sahumerio Ritual SAGRADA MADRE", "pr": 2900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_191c7ac4878.jpeg", "v": [{"t": "Luna Llena", "av": true}, {"t": "Cacao", "av": true}, {"t": "Tranquilidad", "av": true}, {"t": "Purificación", "av": true}, {"t": "Fuerza Interior", "av": true}, {"t": "Limpieza Energética", "av": true}, {"t": "Brillar", "av": true}, {"t": "Amor Propio", "av": true}, {"t": "Gratitud", "av": true}, {"t": "Manifestar", "av": true}, {"t": "Abundancia", "av": true}, {"t": "Empoderamiento", "av": true}]}]}, {"cat": "Bijouterie", "slug": "bijouterie1", "count": 22, "products": [{"id": 3796848, "n": "Anillo San Benito", "pr": 600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2743vmql2z9ja.webp"}, {"id": 3796665, "n": "PULSERA HILO ROJO OJO TURCO TRENZADO CON PERLAS", "pr": 1800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2743vmql1ylb7.webp"}, {"id": 3643181, "n": "Pulsera Mano de Fatima x unidad", "pr": 1600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku21ib3mpe8i5pw.webp"}, {"id": 3643169, "n": "Pulsera Benito Protector", "pr": 3100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku21i9rmpe8d1v0.webp"}, {"id": 3414028, "n": "Japamala Sandalo Grande y Rudrashka", "pr": 7100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1udx6mnugzm6z.webp"}, {"id": 2811445, "n": "Cadenita con Dije Ojo", "pr": 3200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17te4miymr2cc.webp", "v": [{"t": "Plateado", "av": true}, {"t": "Dorado", "av": true}, {"t": "Bronce", "av": true}]}, {"id": 2811371, "n": "Cadena Triple Dorada", "pr": 2900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tdwmiylbnhl.webp"}, {"id": 2809206, "n": "Pulsera Hamsa con Dije", "pr": 5100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tffmixjp4yr.webp"}, {"id": 2793553, "n": "PULSERA HILO ROJO OJO TURCO TRENZADO", "pr": 1800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku17tg4mitfy11o.png"}, {"id": 2533926, "n": "Pack Aros Varios Modelos", "pr": 9000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117simgwf8ye8.jpeg"}, {"id": 2533912, "n": "Pulsera Navideña con Dije", "pr": 11900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117r3mgwdt2ps.jpeg"}, {"id": 2533868, "n": "Pulsera Navideña", "pr": 6000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117sqmgwdmeha.jpeg"}, {"id": 2533853, "n": "Cadenita Ojo Turco Protector", "pr": 10200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117qfmgwcud8u.jpeg", "v": [{"t": "Plateada", "av": true}, {"t": "Dorada", "av": true}]}, {"id": 2533821, "n": "Llavero Hamsa", "pr": 5000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117qfmgwcm5fe.jpeg", "v": [{"t": "Azul", "av": true}, {"t": "Negro", "av": true}, {"t": "Turquesa", "av": true}, {"t": "Rojo", "av": false}]}, {"id": 2533793, "n": "Pulsera Trenzada Ojo Turco", "pr": 2600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117simgwc16dj.jpeg"}, {"id": 2482506, "n": "Pulsera Familia de Elefantes x unid.", "pr": 1600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjqumgi41twj.jpeg"}, {"id": 2217222, "n": "Pulsera Hilo Rojo", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkun0o2mesqlbcf.jpeg", "v": [{"t": "Azul", "av": true}, {"t": "Amarillo", "av": true}, {"t": "Rojo", "av": true}, {"t": "Violeta", "av": true}, {"t": "Negro", "av": true}, {"t": "Verde", "av": true}, {"t": "Rosa", "av": true}]}, {"id": 2151139, "n": "Collar Colgante Corazon del Alma", "pr": 3500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku84lsmek1fdhk.webp"}, {"id": 2044824, "n": "DIJE ALPACA TURMALINA ROSA CON PIRITA", "pr": 9500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2cmgmdkdmff9.webp"}, {"id": 2044816, "n": "DIJE TURMALINA ENGARZADA PREMIUM", "pr": 7000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2cn4mdkdjt9d.webp"}, {"id": 2044698, "n": "CRUZ BENITO MEDIANA 2.3 CM", "pr": 2000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2cn5mdkc82fu.webp"}, {"id": 1270357, "n": "PULSERA CRISTAL OJOS TURCOS", "pr": 4900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku2743umql2k0ef.webp"}]}, {"cat": "Humidificadores", "slug": "humidificadores", "count": 21, "products": [{"id": 3049548, "n": "Humidificador sin filtro CORRIENTE", "pr": 33800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iavlml2bdupx.png"}, {"id": 3049538, "n": "Humidificador sin filtro REFUGIO", "pr": 34800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iaweml2b7zc3.jpeg"}, {"id": 3049528, "n": "Humidificador sin filtro ZEN BLACK", "pr": 40500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iawwml2arl6r.webp"}, {"id": 2689422, "n": "Humidificador sin filtro HOJA FLAMA", "pr": 49900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku16o97mhyyaprq.png"}, {"id": 2689334, "n": "Humidificador sin filtro BRUMA SUAVE", "pr": 34100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku16oa6mhyy90sz.jpeg"}, {"id": 2580564, "n": "Esencia Humidif. CALMA ESENCIAL", "pr": 5800, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku135vcmh6wqjbm.png", "v": [{"t": "AURORA INVERNAL", "av": false}, {"t": "PALO SANTO", "av": false}, {"t": "RECUPERACIÓN MUSCULAR", "av": false}, {"t": "SOL DE INVIERNO", "av": false}, {"t": "CALIDO CONFORT", "av": false}, {"t": "LAVANDA", "av": false}, {"t": "0KM", "av": false}, {"t": "ANTROPOLOGI", "av": false}, {"t": "FRESCURA PURA", "av": false}, {"t": "INVIERNO ZEN", "av": false}, {"t": "OCEAN BLUE", "av": false}, {"t": "PERAS Y FLORES BLANCAS", "av": false}, {"t": "POMELO Y PEPINO", "av": false}, {"t": "REFUGIO ALPINO", "av": false}, {"t": "VAINILLA", "av": false}, {"t": "FLORES DE AZAHAR", "av": false}, {"t": "FUEGO NORDICO", "av": false}, {"t": "NECTAR DEL BOSQUE", "av": false}, {"t": "NOCHE ROMANTICA", "av": false}, {"t": "SUEÑO PROFUNDO", "av": false}]}, {"id": 2565637, "n": "Humidificador sin filtro TERRA BRUMA", "pr": 49200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku12ykpmh4x71ek.jpeg"}, {"id": 2565610, "n": "Humidificador sin filtro LLAMA VIVA", "pr": 39100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku12ylqmh4x0f9m.jpeg", "v": [{"t": "Blanco", "av": true}, {"t": "Oscuro", "av": true}]}, {"id": 2565584, "n": "Humidificador sin filtro BOSQUE DE LUZ", "pr": 49200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku12ykvmh4wrzj2.jpeg"}, {"id": 2565570, "n": "Humidificador sin filtro LUMINA", "pr": 33600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku12yj9mh4wn8ld.jpeg", "v": [{"t": "Claro", "av": true}, {"t": "Oscuro", "av": true}]}, {"id": 2565506, "n": "Humidificador con filtro HUMI CAR", "pr": 13100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku12yjxmh4w4oz1.png"}, {"id": 2565346, "n": "Humidificador con filtro EBANO ZEN", "pr": 17500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku12ykpmh4vapws.webp"}, {"id": 2533764, "n": "Humidificador sin filtro LLAMA INFINITA", "pr": 33600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1fk84mkemxmyv.webp"}, {"id": 2533748, "n": "Humidificador sin filtro BRUMA NORDICA", "pr": 35300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117rumgwb6gh5.png"}, {"id": 2533728, "n": "Humidificador con filtro PETALO DE NIEBLA", "pr": 17500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117qemgwax6o2.png"}, {"id": 2533667, "n": "Humidificador con filtro LOTO ESENCIAL", "pr": 13900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117sqmgwa37l4.webp"}, {"id": 2477642, "n": "ESENCIA HUMIDIFI. 250ML SUMAY-HUASI", "pr": 3700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjrmmggp4w7k.webp"}, {"id": 2477522, "n": "HUMIDIFICADOR H20 Luz", "pr": 15000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117r3mgvfzio5.png"}, {"id": 2477507, "n": "Humidificador con filtro FLOR DE LUZ", "pr": 15700, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuyjt1mggoht35.jpeg"}, {"id": 2477387, "n": "Humidificador con filtro ESFERA DE NOCHE", "pr": 13900, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117r2mgw9ubp3.webp"}, {"id": 1042585, "n": "Esencia Concentrada Para Humidificador ESSENZE 60 ml", "pr": 5200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_19408c23d09.jpeg", "v": [{"t": "Fresh", "av": true}, {"t": "Limon", "av": true}, {"t": "Durazno", "av": true}, {"t": "Jazmin", "av": true}, {"t": "Lavanda", "av": true}, {"t": "Rosa", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Aqua", "av": true}, {"t": "Eucalipto", "av": true}, {"t": "Uva", "av": true}, {"t": "Frutos Rojos", "av": true}, {"t": "Sandalo Naranja", "av": true}]}]}, {"cat": "Aerosoles", "slug": "aerosoles", "count": 4, "products": [{"id": 2512626, "n": "Aerosol Aromanza 280ml", "pr": 7500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzfl5mgqorj1r.webp", "v": [{"t": "PREMIUM LEMON", "av": true}, {"t": "NECTAR DE LOS DIOSES", "av": true}, {"t": "DIAMANTE NEGRO", "av": true}, {"t": "OCEAN BLUE", "av": true}, {"t": "NARANJA PIMIENTA", "av": true}, {"t": "GARDENIA Y FLORES BLANCAS", "av": true}, {"t": "VAINILLA", "av": true}, {"t": "CONFORT BABY", "av": true}, {"t": "NOCHE DE LUNA", "av": true}, {"t": "PASION ROSA", "av": true}, {"t": "BUBBLE GUM", "av": true}, {"t": "M. SHER", "av": true}, {"t": "EBANO MARFIL", "av": true}, {"t": "NAMASTE", "av": true}, {"t": "EXQUISITO RATNAMALA", "av": true}, {"t": "BERRY KISS", "av": true}, {"t": "FRUTOS ROJOS", "av": false}]}, {"id": 630646, "n": "Fuente cascada de humo MDF GLITTER MEDIANA 13CM", "pr": 6200, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_190f4c62a90.webp"}, {"id": 1891048, "n": "Tira Hindu 95cm aprox", "pr": 7000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_16huh1jfh36mcdhx10e.webp"}, {"id": 3049549, "n": "Lampara de Sal Deco", "pr": 28100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku1iawwml2bi94h.png", "v": [{"t": "Verde", "av": false}, {"t": "Blanco", "av": false}, {"t": "Azul", "av": false}, {"t": "Rosa", "av": false}]}]}, {"cat": "Ambientador", "slug": "ambientador", "count": 8, "products": [{"id": 3808732, "n": "Repuesto Difusores Masala x 500 ml", "pr": 13000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku27q0fmqpt5cof.webp", "v": [{"t": "Fresh", "av": true}, {"t": "Frutos Rojos", "av": true}, {"t": "Limon", "av": true}, {"t": "Naranja-Pimienta", "av": true}, {"t": "Pistacho", "av": true}, {"t": "Sandalo Hindu", "av": true}, {"t": "Vainilla", "av": true}, {"t": "Coco-Vainilla", "av": false}, {"t": "Lavanda", "av": false}]}, {"id": 3745188, "n": "Spray Aromanza 60ml", "pr": 3400, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku25fyxmq6pgzw6.webp", "v": [{"t": "Berry Kiis", "av": true}, {"t": "Citronela", "av": true}, {"t": "Premium Lemon", "av": false}, {"t": "Wanami", "av": false}, {"t": "Naranja Pimienta", "av": false}, {"t": "Acqua Per Luomo", "av": false}, {"t": "Violeta Alpina", "av": false}, {"t": "Shanti Namaste", "av": false}, {"t": "Coco Beach", "av": false}]}, {"id": 3745071, "n": "Difusor Varilla Aromanza 200ml", "pr": 12500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku25fx2mq6of74z.webp", "v": [{"t": "Premium Lemon", "av": true}, {"t": "Candy Grape", "av": true}, {"t": "Ocean Blue", "av": true}, {"t": "Noche Luna", "av": true}, {"t": "Esencia de la India", "av": true}, {"t": "Mix Floral", "av": true}, {"t": "Lemon Pie", "av": true}, {"t": "Coco Beach", "av": true}, {"t": "Manzana Canela", "av": true}, {"t": "Miel y Almendras", "av": true}, {"t": "Vainilla Sugar", "av": false}]}, {"id": 3728227, "n": "Difusores Varillas Tao Perfum", "pr": 7600, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku25s9omqgiy8wc.png", "v": [{"t": "Yagra Hindu", "av": true}, {"t": "Limon Premium", "av": true}, {"t": "Vainilla Mistica", "av": true}, {"t": "Frutilla Dulce", "av": true}, {"t": "Nectar Celestial", "av": true}]}, {"id": 2689334, "n": "Humidificador sin filtro BRUMA SUAVE", "pr": 34100, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku16oa6mhyy90sz.jpeg"}, {"id": 2604908, "n": "Difusor Aromaterapia 125ml", "pr": 10300, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku140b0mhdesoc7.png", "v": [{"t": "Energy (Naranja Jengibre)", "av": true}, {"t": "Mint (Eucaliptus Menta Verde)", "av": true}, {"t": "Balance (Vainilla Patchouli)", "av": false}, {"t": "Relax (Lavanda Cedroa)", "av": false}, {"t": "Sleep (Lavanda Vainilla", "av": false}, {"t": "Spa (Eucaliptus Cipres)", "av": false}]}, {"id": 2512626, "n": "Aerosol Aromanza 280ml", "pr": 7500, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpkuzfl5mgqorj1r.webp", "v": [{"t": "PREMIUM LEMON", "av": true}, {"t": "NECTAR DE LOS DIOSES", "av": true}, {"t": "DIAMANTE NEGRO", "av": true}, {"t": "OCEAN BLUE", "av": true}, {"t": "NARANJA PIMIENTA", "av": true}, {"t": "GARDENIA Y FLORES BLANCAS", "av": true}, {"t": "VAINILLA", "av": true}, {"t": "CONFORT BABY", "av": true}, {"t": "NOCHE DE LUNA", "av": true}, {"t": "PASION ROSA", "av": true}, {"t": "BUBBLE GUM", "av": true}, {"t": "M. SHER", "av": true}, {"t": "EBANO MARFIL", "av": true}, {"t": "NAMASTE", "av": true}, {"t": "EXQUISITO RATNAMALA", "av": true}, {"t": "BERRY KISS", "av": true}, {"t": "FRUTOS ROJOS", "av": false}]}, {"id": 2477522, "n": "HUMIDIFICADOR H20 Luz", "pr": 15000, "img": "https://cdn.v2.tiendanegocio.com/gallery/20826/img_20826_dpku117r3mgvfzio5.png"}]}]};
+
+
+
+const fmt = n => "$" + n.toLocaleString("es-AR");
+/* carrito: clave "id" o "id::variante" -> {p, variant, qty, seq} */
+const cart = new Map();
+let addSeq = 0;
+const productIndex = new Map();
+DATA.categories.forEach(c => c.products.forEach(p => { if(!productIndex.has(p.id)) productIndex.set(p.id, p); }));
+
+function esc(s){ return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;"); }
+
+/* ----- categorías ----- */
+const catPanel = document.getElementById("catPanel");
+const pillsEl = document.getElementById("pills");
+const catBtn = document.getElementById("catBtn");
+let activeCat = "__all__";
+let panelOpen = false;
+
+/* El botón dice "Categorías" por defecto (Todos) o el nombre de la categoría elegida */
+function catLabel(slug, name){ return slug === "__all__" ? "Categorías" : name; }
+
+function buildPills(){
+  const cats = [{slug:"__all__", cat:"Todos"}, ...DATA.categories];
+  pillsEl.innerHTML = "";
+  cats.forEach(c => {
+    const b = document.createElement("button");
+    b.className = "pill" + (c.slug === activeCat ? " active" : "");
+    b.textContent = c.cat;
+    b.onclick = () => {
+      activeCat = c.slug;
+      document.getElementById("catCur").textContent = catLabel(c.slug, c.cat);
+      document.getElementById("search").value = "";
+      buildPills();
+      togglePanel(false);
+      render();
+      window.scrollTo({top:0});
+    };
+    pillsEl.appendChild(b);
+  });
+}
+function togglePanel(open){
+  panelOpen = open === undefined ? !panelOpen : open;
+  catPanel.classList.toggle("open", panelOpen);
+  syncOverlay();
+  catBtn.setAttribute("aria-expanded", panelOpen);
+}
+catBtn.onclick = () => { closeVmodal(); closeDrawer(); togglePanel(); };
+
+/* ----- orden ----- */
+let sortMode = "rel";
+document.getElementById("sort").addEventListener("change", e => {
+  sortMode = e.target.value;
+  render();
+});
+function sortList(list){
+  const l = [...list];
+  if(sortMode === "pa") l.sort((a,b) => a.pr - b.pr);
+  else if(sortMode === "pd") l.sort((a,b) => b.pr - a.pr);
+  else if(sortMode === "az") l.sort((a,b) => a.n.localeCompare(b.n, "es"));
+  else if(sortMode === "za") l.sort((a,b) => b.n.localeCompare(a.n, "es"));
+  return l;
+}
+
+/* ----- catálogo ----- */
+const mainEl = document.getElementById("main");
+
+function qtyOf(id){
+  let n = 0;
+  cart.forEach(item => { if(item.p.id === id) n += item.qty; });
+  return n;
+}
+function actionsHTML(p){
+  const q = qtyOf(p.id);
+  if(q === 0) return `<button class="add" data-add="${p.id}">Agregar</button>`;
+  return `<div class="stepper">
+    <button data-minus="${p.id}" aria-label="Quitar uno">−</button>
+    <span class="q">${q}</span>
+    <button data-plus="${p.id}" aria-label="Agregar uno">+</button>
+  </div>`;
+}
+function cardHTML(p){
+  const img = p.img
+    ? `<img src="${p.img}" alt="${esc(p.n)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.outerHTML='<div class=&quot;noimg&quot;>✦</div>'">`
+    : `<div class="noimg">✦</div>`;
+  const vtag = p.v && p.v.length ? `<div class="vtag">${p.v.length} aromas</div>` : "";
+  return `<div class="card">
+    <div class="arch">${img}${vtag}</div>
+    <div class="pname">${esc(p.n)}</div>
+    <div class="pprice">${fmt(p.pr)}</div>
+    <div class="actions" data-actions="${p.id}">${actionsHTML(p)}</div>
+  </div>`;
+}
+function render(){
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  let html = "";
+  if(q){
+    const seen = new Set(); const results = [];
+    DATA.categories.forEach(c => c.products.forEach(p => {
+      if(!seen.has(p.id) && p.n.toLowerCase().includes(q)){ seen.add(p.id); results.push(p); }
+    }));
+    const list = sortList(results);
+    html += `<div class="cat-title">Resultados</div><div class="cat-count">${list.length} producto${list.length===1?"":"s"}</div>`;
+    html += list.length
+      ? `<div class="grid">${list.map(cardHTML).join("")}</div>`
+      : `<div class="empty">No encontramos productos con ese nombre.<br>Probá con otra palabra.</div>`;
+  } else {
+    const cats = activeCat === "__all__" ? DATA.categories : DATA.categories.filter(c => c.slug === activeCat);
+    cats.forEach(c => {
+      if(!c.products.length) return;
+      html += `<div class="cat-title">${esc(c.cat)}</div><div class="cat-count">${c.count} productos</div>`;
+      html += `<div class="grid">${sortList(c.products).map(cardHTML).join("")}</div>`;
+    });
+  }
+  mainEl.innerHTML = html;
+}
+function refreshActions(id){
+  const p = productIndex.get(id);
+  document.querySelectorAll(`[data-actions="${id}"]`).forEach(el => { el.innerHTML = actionsHTML(p); });
+  updateBadge();
+}
+function keyOf(id, variant){ return variant ? id + "::" + variant : String(id); }
+function addToCart(id, variant){
+  const k = keyOf(id, variant);
+  const item = cart.get(k);
+  const isNewLine = !item;
+  if(item) item.qty++;
+  else cart.set(k, { p: productIndex.get(id), variant: variant || null, qty: 1, seq: ++addSeq });
+  refreshActions(id);
+  if(drawerOpen) renderCart();
+  /* Apertura automática al agregar el primer producto o un producto nuevo (línea nueva) */
+  if(isNewLine && !drawerOpen) openDrawer();
+}
+function removeOneFromProduct(id){
+  /* quita 1 de la línea agregada más recientemente de ese producto */
+  let target = null;
+  cart.forEach((item, k) => {
+    if(item.p.id === id && (!target || item.seq > cart.get(target).seq)) target = k;
+  });
+  if(!target) return;
+  const item = cart.get(target);
+  item.qty--;
+  if(item.qty <= 0) cart.delete(target);
+  refreshActions(id);
+  if(drawerOpen) renderCart();
+}
+mainEl.addEventListener("click", e => {
+  const add = e.target.closest("[data-add]");
+  const plus = e.target.closest("[data-plus]");
+  const minus = e.target.closest("[data-minus]");
+  const id = add ? Number(add.dataset.add) : plus ? Number(plus.dataset.plus) : minus ? Number(minus.dataset.minus) : null;
+  if(id === null) return;
+  const p = productIndex.get(id);
+  if(minus){ removeOneFromProduct(id); return; }
+  /* agregar o sumar: si tiene variantes, abrir selector de aromas */
+  if(p.v && p.v.length) openVmodal(p);
+  else addToCart(id, null);
+});
+
+/* ----- selector de variantes / aromas ----- */
+const vmodal = document.getElementById("vmodal");
+let vmodalOpen = false;
+let vProduct = null;
+let vSelected = null;
+function openVmodal(p){
+  vProduct = p; vSelected = null;
+  document.getElementById("vName").textContent = p.n + " — " + fmt(p.pr);
+  const box = document.getElementById("vList");
+  box.innerHTML = "";
+  /* TODAS las variantes son seleccionables: se ignora por completo la propiedad "av" */
+  p.v.forEach(v => {
+    const b = document.createElement("button");
+    b.className = "vopt";
+    b.textContent = v.t;
+    b.onclick = () => {
+      vSelected = v.t;
+      box.querySelectorAll(".vopt").forEach(x => x.classList.remove("sel"));
+      b.classList.add("sel");
+      document.getElementById("vConfirm").disabled = false;
+    };
+    box.appendChild(b);
+  });
+  document.getElementById("vConfirm").disabled = true;
+  closeDrawer(); togglePanel(false);
+  vmodalOpen = true;
+  vmodal.classList.add("open");
+  syncOverlay();
+}
+function closeVmodal(){
+  vmodalOpen = false;
+  vmodal.classList.remove("open");
+  syncOverlay();
+}
+document.getElementById("closeVmodal").onclick = closeVmodal;
+document.getElementById("vConfirm").onclick = () => {
+  if(!vProduct || !vSelected) return;
+  const id = vProduct.id, variant = vSelected;
+  closeVmodal();
+  addToCart(id, variant);
+};
+
+/* ----- buscador ----- */
+document.getElementById("search").addEventListener("input", () => {
+  const has = document.getElementById("search").value.trim();
+  if(has && activeCat !== "__all__"){
+    activeCat = "__all__";
+    document.getElementById("catCur").textContent = "Categorías";
+    buildPills();
+  }
+  render();
+});
+
+/* ----- carrito ----- */
+const overlay = document.getElementById("overlay");
+const drawer = document.getElementById("drawer");
+const cartBtnTop = document.getElementById("cartBtnTop");
+let drawerOpen = false;
+
+function syncOverlay(){
+  overlay.classList.toggle("open", drawerOpen || panelOpen || vmodalOpen);
+}
+function updateBadge(){
+  let n = 0; cart.forEach(i => n += i.qty);
+  document.getElementById("badge").textContent = n;
+}
+function renderCart(){
+  const box = document.getElementById("cartItems");
+  if(cart.size === 0){
+    box.innerHTML = `<div class="cart-empty">Tu carrito está vacío.<br>Agregá productos para armar tu pedido.</div>`;
+  } else {
+    let html = "";
+    cart.forEach(({p, variant, qty}, k) => {
+      const img = p.img ? `<img src="${p.img}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.replaceWith('✦')">` : "✦";
+      const name = esc(p.n) + (variant ? ` <em>(${esc(variant)})</em>` : "");
+      html += `<div class="citem">
+        <div class="thumb">${img}</div>
+        <div class="info">
+          <div class="n">${name}</div>
+          <div class="p">${fmt(p.pr)}</div>
+        </div>
+        <div class="qty">
+          <button data-act="minus" data-key="${esc(k)}" aria-label="Quitar uno">−</button>
+          <span>${qty}</span>
+          <button data-act="plus" data-key="${esc(k)}" aria-label="Agregar uno">+</button>
+        </div>
+      </div>`;
+    });
+    box.innerHTML = html;
+  }
+  let total = 0; cart.forEach(({p, qty}) => total += p.pr * qty);
+  document.getElementById("total").textContent = fmt(total);
+  document.getElementById("waBtn").disabled = cart.size === 0;
+  document.getElementById("clearCart").style.display = cart.size === 0 ? "none" : "block";
+  updateBadge();
+}
+document.getElementById("cartItems").addEventListener("click", e => {
+  const btn = e.target.closest("button[data-act]");
+  if(!btn) return;
+  const k = btn.dataset.key;
+  const item = cart.get(k);
+  if(!item) return;
+  if(btn.dataset.act === "plus") item.qty++;
+  else { item.qty--; if(item.qty <= 0) cart.delete(k); }
+  refreshActions(item.p.id);
+  renderCart();
+});
+document.getElementById("clearCart").onclick = () => {
+  const ids = new Set();
+  cart.forEach(item => ids.add(item.p.id));
+  cart.clear();
+  ids.forEach(refreshActions);
+  renderCart();
+};
+function openDrawer(){ closeVmodal(); togglePanel(false); drawerOpen = true; renderCart(); drawer.classList.add("open"); syncOverlay(); }
+function closeDrawer(){ drawerOpen = false; drawer.classList.remove("open"); syncOverlay(); }
+cartBtnTop.onclick = openDrawer;
+document.getElementById("closeDrawer").onclick = closeDrawer;
+overlay.onclick = () => { closeDrawer(); togglePanel(false); closeVmodal(); };
+
+/* ----- "Seguir comprando": cierra el carrito y resalta el botón del menú superior ----- */
+let pulseTimer = null;
+document.getElementById("keepShopping").onclick = () => {
+  closeDrawer();
+  /* dispara la animación pulse/glow en el botón del carrito superior */
+  cartBtnTop.classList.remove("pulse");
+  void cartBtnTop.offsetWidth; /* reinicia la animación si se repite */
+  cartBtnTop.classList.add("pulse");
+  clearTimeout(pulseTimer);
+  pulseTimer = setTimeout(() => cartBtnTop.classList.remove("pulse"), 1300);
+};
+
+/* ----- whatsapp ----- */
+document.getElementById("waDirect").href =
+  "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("¡Hola! Quiero hacerles una consulta.");
+
+document.getElementById("waBtn").onclick = () => {
+  if(cart.size === 0) return;
+  let lines = ["¡Hola! Quiero hacer este pedido:", ""];
+  let total = 0;
+  cart.forEach(({p, variant, qty}) => {
+    const sub = p.pr * qty;
+    total += sub;
+    /* La variante viaja entre paréntesis junto al nombre: Nombre Producto (Aroma) */
+    const name = p.n + (variant ? ` (${variant})` : "");
+    /* Se usan guion y ':' para máxima compatibilidad de caracteres en WhatsApp */
+    lines.push(`- ${qty} x ${name} : ${fmt(sub)}`);
+  });
+  lines.push("", `*Total: ${fmt(total)}*`);
+  const url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lines.join("\n"));
+  window.open(url, "_blank");
+};
+
+buildPills();
+render();
+updateBadge();
+</script>
+</body>
+</html>
