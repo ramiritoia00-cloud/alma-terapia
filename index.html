@@ -860,8 +860,11 @@ function openVmodal(p){
   document.getElementById("vName").textContent = p.n + " — " + fmt(p.pr);
   const box = document.getElementById("vList");
   box.innerHTML = "";
-  /* TODAS las variantes son seleccionables: se ignora por completo la propiedad "av" */
-  p.v.forEach(v => {
+  
+  // Filtrar solo las variantes disponibles (av === true), o si ninguna está marcada, mostrar todas
+  const availableVariants = (p.v && p.v.some(v => v.av === true)) ? p.v.filter(v => v.av === true) : p.v;
+
+  availableVariants.forEach(v => {
     const b = document.createElement("button");
     b.className = "vopt";
     b.textContent = v.t;
@@ -999,7 +1002,8 @@ document.getElementById("waBtn").onclick = () => {
     lines.push(`- ${qty} x ${name} : ${fmt(sub)}`);
   });
   lines.push("", `*Total: ${fmt(total)}*`);
-  const url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lines.join("\n"));
+  const url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lines.join("
+"));
   window.open(url, "_blank");
 };
 
@@ -1009,3 +1013,4 @@ updateBadge();
 </script>
 </body>
 </html>
+
